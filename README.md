@@ -10,7 +10,7 @@
 
 ## Course Description
 
-This is a graduate-level course on computer networks. It provides a comprehensive overview on advanced topics in network protcols and networked systems. The course will cover both classic paprs on Internet protocols and recent research results. It will examine a wide range of topics, e.g., routing, congestion control, network architectures, datacenter networks, network virtualization, software-defined networking, and programmable networks, with an emphasize on core networking concepts and principles. The course will include lectures, paper discussions, programming assignments and a research project.
+This is a graduate-level course on computer networks. It provides a comprehensive overview on advanced topics in network protocols and networked systems. The course will cover both classic papers on Internet protocols and recent research results. It will examine a wide range of topics, e.g., routing, congestion control, network architectures, datacenter networks, network virtualization, software-defined networking, and programmable networks, with an emphasize on core networking concepts and principles. The course will include lectures, paper discussions, programming assignments and a research project.
 
 ## Prerequisites
 
