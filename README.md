@@ -1,4 +1,4 @@
-# CS 601.044 : Advanced Computer Networks
+# CS 601.644 : Advanced Computer Networks
 
 ## Logistics
 
