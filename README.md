@@ -22,30 +22,37 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 
 | Date    | Topics  | Readings | Notes   |
 | :------ | :------ | :------  | :------ |
-| **Introduction** | | | |
-| Tue 01/01 | Course Overview |  | |
-| Thu 01/01 | End Hosts | | |
-| | Control Plane | | |
-| | Data Plane | | |
-| | Overlay Networks | | |
+| **Classics** | | | |
+| Tue 01/01 | Course Overview | How to Read, You and Your Research | |
+| Thu 01/01 | End Host | Packet Switching, E2E Argument | |
+| | Control Plane | Design Philosophy, E2E Routing Behavor | |
+| | Data Plane | Click, 50Gbps Router, RMT/P4 | |
+| | Overlay Networks | Chord, CAN, Pastry | Tapestry |
 | **Datacenter Networking** | | | |
-| | Datacenter Topologies | | |
-| | Optical Datacenters | | |
-| | Resource Allocation | | |
+| | Datacenter Architectures | VL2, PortLand, Jupiter Rising | |
+| | Optical Datacenters | Helios, FireFly, ProjecToR | |
+| | Resource Allocation | DRF, Carbyne, Varys | |
 | **Congestion Control** | | | |
-| | Datacenter Congestion Control | | |
-| | RDMA | | |
+| | Datacenter Congestion Control | DCTCP, PDQ, pFabric | |
+| | RDMA | DCQCN, RoCEv2, Design Guidelines | |
 | **Software-Defined Networking** | | | |
-| | SDN Architecture | | |
-| | SDN Control Plane | | |
-| | Network Update | | |
-| | Traffic Engineering | | |
+| | SDN Control Plane | Ethane, ONIX, FlowVisor | |
+| | Wide Area Networks | B4, SWAN, OWAN | |
+| | Traffic Engineering | BwE, FFC, Footprint | |
+| | Network Update | Abstraction, zUpdate, Dionysus | |
 | **Network Verification** | | | |
-| | Data Plane Verification | | |
-| | Control Plane Verification | | |
-| **Networking for Data Analytics** | | | |
-| | Wide Area Analytics | | |
-| | Performance Modeling | | |
+| | Data Plane Verification | HSA, VeriFlow, Delta-net | Mutable |
+| | Control Plane Verification | BatFish, Propane, Mineseeper | |
+| **Network Measurement** | | | |
+| | Network Telemetry | NetSight, EverFlow, Pingmesh | |
+| | Sketch | OpenSketch, UnivMon, SketchVisor | |
+| **Middleboxes** | | | |
+| | Middlebox | SIMPLE, E2, NetBricks | |
+| | Load balance | Ananta, Duet, SilkRoad | |
+| **Networking for Big Data** | | | |
+| | Distributed Storage | IOFlow, SwitchKV, NetCache | |
+| | Wide Area Analytics | JetStream, Iridium, Clarinet | |
+| | Performance Modeling | Ernest, CherryPick, PARIS | |
 | **Project Presentation** | | | |
 
 ## Assignments
