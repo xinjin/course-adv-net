@@ -22,44 +22,49 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 
 | Date    | Topics  | Readings | Notes   |
 | :------ | :------ | :------  | :------ |
-| **Classics** | | | |
-| Tue 01/01 | Course Overview | How to Read, You and Your Research | |
-| Thu 01/01 | End Host | Packet Switching, E2E Argument | |
-| | Control Plane | Design Philosophy, E2E Routing Behavor | |
-| | Data Plane | Click, 50Gbps Router, RMT/P4 | |
-| | Overlay Networks | Chord, CAN, Pastry | Tapestry |
-| **Datacenter Networking** | | | |
-| | Datacenter Architectures | VL2, PortLand, Jupiter Rising | |
-| | Optical Datacenters | Helios, FireFly, ProjecToR | |
-| | Resource Allocation | DRF, Carbyne, Varys | |
-| **Congestion Control** | | | |
-| | Datacenter Congestion Control | DCTCP, PDQ, pFabric | |
-| | RDMA | DCQCN, RoCEv2, Design Guidelines | |
-| **Software-Defined Networking** | | | |
-| | SDN Control Plane | Ethane, ONIX, FlowVisor | |
-| | Wide Area Networks | B4, SWAN, OWAN | |
-| | Traffic Engineering | BwE, FFC, Footprint | |
-| | Network Update | Abstraction, zUpdate, Dionysus | |
-| **Network Verification** | | | |
-| | Data Plane Verification | HSA, VeriFlow, Delta-net | Mutable |
-| | Control Plane Verification | BatFish, Propane, Mineseeper | |
-| **Network Measurement** | | | |
-| | Network Telemetry | NetSight, EverFlow, Pingmesh | |
-| | Sketch | OpenSketch, UnivMon, SketchVisor | |
-| **Middleboxes** | | | |
-| | Middlebox | SIMPLE, E2, NetBricks | |
-| | Load balance | Ananta, Duet, SilkRoad | |
-| **Networking for Big Data** | | | |
-| | Distributed Storage | IOFlow, SwitchKV, NetCache | |
-| | Wide Area Analytics | JetStream, Iridium, Clarinet | |
-| | Performance Modeling | Ernest, CherryPick, PARIS | |
-| **Project Presentation** | | | |
+| | **Classics** | | |
+| Tue 09/05 | Course Overview | How to Read, You and Your Research | |
+| Thu 09/07 | End Host | Packet Switching, E2E Argument | |
+| Tue 09/12 | Control Plane | Design Philosophy, E2E Routing Behavior | |
+| Thu 09/14 | Data Plane | Click, 50Gbps Router, RMT/P4 | |
+| Tue 09/19 | Overlay Networks | Chord, CAN, Pastry | Tapestry |
+| | **Datacenter Networking** | | |
+| Thu 09/21 | Datacenter Architectures | VL2, PortLand, Jupiter Rising | |
+| Tue 09/26 | Optical Datacenters | Helios, FireFly, ProjecToR | |
+| Thu 09/28 | No class, but work on assignment 1 and forming groups | | Assignment 1 due Fri 09/29 |
+| Tue 10/03 | Resource Allocation | DRF, Carbyne, Varys | |
+| | **Congestion Control** | | |
+| Thu 10/05 | Datacenter Congestion Control | DCTCP, PDQ, pFabric | |
+| Tue 10/10 | RDMA | DCQCN, RoCEv2, Design Guidelines | |
+| | **Software-Defined Networking** | | |
+| Thu 10/12 | SDN Control Plane | Ethane, ONIX, FlowVisor | |
+| Tue 10/17 | Wide Area Networks | B4, SWAN, OWAN | |
+| Thu 10/19 | Traffic Engineering | BwE, FFC, Footprint | Project Proposal due Fri 10/20 |
+| Tue 10/24 | Network Update | Abstraction, zUpdate, Dionysus | |
+| | **Network Verification** | | |
+| Thu 10/26 | No class, but work on assignment 2 | | Assignment 2 due Fri 10/27 |
+| Tue 10/31 | Data Plane Verification | HSA, VeriFlow, Delta-net | Mutable |
+| Thu 11/02 | Control Plane Verification | BatFish, Propane, Mineseeper | |
+| | **Network Measurement** | | |
+| Tue 11/07 | Network Telemetry | NetSight, EverFlow, Pingmesh | |
+| Thu 11/09 | Sketch | OpenSketch, UnivMon, SketchVisor | |
+| | **Middleboxes** | | |
+| Tue 11/14 | Frameworks | SIMPLE, E2, NetBricks | |
+| Thu 11/16 | Load Balancers | Ananta, Duet, SilkRoad | |
+| Tue 11/21 | Thanksgiving Vacation | | Gobble, gobble! |
+| Thu 11/23 | Thanksgiving Vacation | | Gobble, gobble! |
+| | **Networking for Big Data** | | |
+| Tue 11/28 | Distributed Storage | IOFlow, SwitchKV, NetCache | |
+| Thu 11/30 | Wide Area Analytics | JetStream, Iridium, Clarinet | |
+| Tue 12/5 | Performance Modeling | Ernest, CherryPick, PARIS | |
+| | **Project Presentations** | | |
+| Thu 12/7 | Talks by project groups | | Project Report due Fri 12/8 |
 
 ## Assignments
 
 ## Project
 
-## Policices
+## Policies
 
 ### Academic Integrity Policy
 
