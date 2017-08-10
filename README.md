@@ -70,7 +70,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 - [Assignment 2](assignments/assignment2.md): TBD.
 
 ## Project
-- Final project: Novel research with a system-building component - Open-ended research problem - Can work alone or in small teams, i.e., 1-5 people - Must involve writing some software - Idea: Come up with your own, or talk to me- Can overlap with other projects, with permission - Undergraduate research projects - PhD qualifying research projects- Deliverables - Two-page short proposal: Oct 23 - Project presentation: Dec 7 (last class) - Six-page final report: Dec 11
+- Final project: Novel research with a system-building component  - Open-ended research problem  - Can work alone or in small teams, i.e., 1-5 people  - Must involve writing some software  - Idea: Come up with your own, or talk to me- Can overlap with other projects, with permission  - Undergraduate research projects  - PhD qualifying research projects- Deliverables  - Two-page short proposal: Oct 23  - Project presentation: Dec 7 (last class)  - Six-page final report: Dec 11
 
 ## Policies
 

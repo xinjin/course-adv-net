@@ -13,13 +13,13 @@ In this assignment, you will use iperf3 and wireshark to explore TCP.
 ### Deliverables
 
 - Parallel Connections:
- - Script/code for running the parallel connections using iperf3.
- - One plot and answers to the three questions. Put into a single pdf
+  - Script/code for running the parallel connections using iperf3.
+  - One plot and answers to the three questions. Put into a single pdf
 - RTT:
- - Script/code for running the connections to the different servers.
- - One plot and answers to the three questions. Put into the same pdf as above.
+  - Script/code for running the connections to the different servers.
+  - One plot and answers to the three questions. Put into the same pdf as above.
 - Wireshark:
- - Two screenshots and answers to the five questions (three and two). Put into the same pdf as above.
+  - Two screenshots and answers to the five questions (three and two). Put into the same pdf as above.
 
 **Summarize:**
 You should have two script files, and a single pdf file (containing two plots, two screenshots, and answers to 11 questions in total).
