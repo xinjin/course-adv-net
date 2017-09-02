@@ -9,7 +9,7 @@
 - Office hours: Tuesday 2:45-4pm
 - Credits: 3 credits
 - Area for MSE and PhD requirements: Systems
-- Homework submission through Gradescope, join the course with entry code: MZRZK4
+- Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code MZRZK4
 
 ## Course Description
 
