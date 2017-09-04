@@ -21,7 +21,8 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 
 ## Announcements
 
-- Monday, August 7: Welcome to the course.
+- Monday, September 4: Sign up for paper presentations [here](https://docs.google.com/spreadsheets/d/1DwZDxOBwvyADt4WEDsYZKJS4s6wEcVM4_Pf29147_SE/edit?usp=sharing) before September 7
+
 
 ## Course Syllabus
 
@@ -49,7 +50,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | | **Network Verification** | | |
 | Thu 10/26 | No class, but work on assignment 2 | | Assignment 2 due Mon 10/30 |
 | Tue 10/31 | Data Plane Verification | [HSA](papers/NSDI12_HSA.pdf), [Delta-net](papers/NSDI17_DeltaNet.pdf) | [NetPlumber](papers/NSDI13_NetPlumber.pdf), [VeriFlow](papers/NSDI13_VeriFlow.pdf), [Mutable](papers/NSDI17_Mutable.pdf) |
-| Thu 11/02 | Control Plane Verification | [BatFish](papers/NSDI15_Batfish.pdf ), [Mineseeper](papers/SIGCOMM17_Minesweeper.pdf) | [Propane](papers/SIGCOMM16_Propane.pdf) |
+| Thu 11/02 | Control Plane Verification | [BatFish](papers/NSDI15_Batfish.pdf ), [Minesweeper](papers/SIGCOMM17_Minesweeper.pdf) | [Propane](papers/SIGCOMM16_Propane.pdf) |
 | | **Network Measurement** | | |
 | Tue 11/07 | Network Telemetry | [EverFlow](papers/SIGCOMM15_EverFlow.pdf), [Pingmesh](papers/SIGCOMM15_Pingmesh.pdf) | [NetSight](papers/NSDI14_NetSight.pdf) |
 | Thu 11/09 | Sketch | [UnivMon](papers/SIGCOMM16_UnivMon.pdf), [SketchVisor](papers/SIGCOMM17_SketchVisor.pdf) | [OpenSketch](papers/NSDI13_OpenSketch.pdf) |
@@ -72,10 +73,23 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 
 How to write reviews
 
-- 4 sections in review:  - Summary  - Paper strengths  - Paper weaknesses  - Detailed comments- Summary (points in sentence or bullet form)  - 1-2 points:  What problem?  - 1-2 points:  Core novel ideas or technical contributions  - 3-5 points: Summarize approach, mechanisms, findings- Strengths/Weaknesses:  2-4 points each- Detailed comments:   - Longer exposition. Be constructive.  Imagine conversation w/ authors:  What would you tell them?  - May include:      - Problem: What is it? Is it new? Is it real? Is it important?
+- 4 sections in review
+  - Summary
+  - Paper strengths
+  - Paper weaknesses
+  - Detailed comments
+- Summary (points in sentence or bullet form)
+  - 1-2 points:  What problem?
+  - 1-2 points:  Core novel ideas or technical contributions
+  - 3-5 points: Summarize approach, mechanisms, findings
+- Strengths/Weaknesses:  2-4 points each
+- Detailed comments
+  - Longer exposition. Be constructive.  Imagine conversation w/ authors:  What would you tell them?
+  - May include
+      - Problem: What is it? Is it new? Is it real? Is it important?
       - Solution: What is the technique(s)? Is it novel? How is it compared to past solutions? What is the intuition(s)?
-      - Implementation/evaluation: Does it have a real system prototype? Are the evaluation datasets representative? Does the evaluation cover all aspects? 
-      - Looking forward: Can you come up with a new/different/better solution? Can you find a new/related problem to solve?
+      - Implementation/evaluation: Does it have a real system prototype? Is the evaluation dataset(s) representative? Does the evaluation cover all aspects?
+      - Looking forward: Can you come up with a new/different/better solution? Can you find a new/related problem to solve?
 
 ## Programming Assignments
 
