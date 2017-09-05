@@ -32,7 +32,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 09/05 | Course Overview | [How to Read](papers/CCR07_HowToRead.pdf), [You and Your Research](papers/Bell86_YouAndYourResearch.pdf) | |
 | Thu 09/07 | End Host | [Packet Switching](papers/TOC74_CerfKahn.pdf), [E2E Argument](papers/TOCS84_EndToEnd.pdf) | |
 | Tue 09/12 | Control Plane | [Design Philosophy](papers/SIGCOMM88_DesignPhilosophy.pdf), [E2E Routing Behavior](papers/TON97_E2ERouting.pdf) | |
-| Thu 09/14 | Data Plane | [Click](papers/TOCS00_Click.pdf), [P4](papers/CCR14_P4.pdf) | [50Gbps Router](papers/TON98_50GbpsRouter.pdf), [RMT](papers/SIGCOMM13_RMT.pdf) |
+| Thu 09/14 | Data Plane | [Click](papers/TOCS00_Click.pdf), [P4](papers/CCR14_P4.pdf) | [50Gbps Router](papers/TON98_50GbpsRouter.pdf), [RMT](papers/SIGCOMM13_RMT.pdf); Class moved to Malone 107 |
 | Tue 09/19 | No class, but work on assignment 1 and forming groups | | Assignment 1 due Mon 09/25 |
 | Thu 09/21 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [Tapestry](papers/JSAC04_Tapestry.pdf) |
 | | **Datacenter Networking** | | |
