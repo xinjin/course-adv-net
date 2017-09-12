@@ -22,7 +22,7 @@ In this assignment, you will use iperf3 and wireshark to explore TCP.
   - Two screenshots and answers to the five questions (three and two). Put into the same pdf as above.
 
 **Summarize:**
-You should have two script files, and a single pdf file (containing two plots, two screenshots, and answers to 11 questions in total).
+You should have two script files (in one tar file), and a single pdf file (containing two plots, two screenshots, and answers to 11 questions in total).
 
 
 ## <a name="parallel"></a>TCP Throughput v.s. Parallel Connections
