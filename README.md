@@ -37,7 +37,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Thu 09/21 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [Tapestry](papers/JSAC04_Tapestry.pdf) |
 | | **Datacenter Networking** | | |
 | Tue 09/26 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
-| Thu 09/29 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
+| Thu 09/28 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
 | Tue 10/03 | Resource Allocation | [DRF](papers/NSDI11_DRF.pdf), [Carbyne](papers/OSDI16_Carbyne.pdf) | [Varys](papers/SIGCOMM14_Varys.pdf) |
 | Thu 10/05 | Congestion Control | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
 | | **RDMA** | | |
