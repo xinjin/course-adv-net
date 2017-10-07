@@ -200,7 +200,7 @@ send correctly-formatted packets to h3 through s1 and s3.
 switches). You can look at the appropriate files and check that your packets are
 being processed correctly.
 
-## Exercise 2: Implementing TCP flowlet switching
+## Exercise 2: Key-Value Store
 
 ### What is key-value store
 
