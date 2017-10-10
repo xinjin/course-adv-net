@@ -69,6 +69,12 @@ like this:
 - `sudo apt-get install mininet`
 - `sudo pip install scapy thrift networkx`
 
+`NOTE FOR MAC USERS`: OS X currently doesn't support native Mininet installation. You 
+would need to do this assignment in a virtual ubuntu environment. The easiest way would 
+probably be through ruuning a pre-packaged Mininet/Ubuntu VM in VirtualBox, please read 
+carefully and follow through the instructions in here 
+[http://mininet.org/download/](http://mininet.org/download/).
+
 ## Before starting the exercises
 
 Update the values of the shell variables `BMV2_PATH` and
