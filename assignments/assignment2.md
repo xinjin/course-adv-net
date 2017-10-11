@@ -89,10 +89,14 @@ Place yourself in the `assignment2_src` directory [here](https://github.com/xinj
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
 from scratch, although you are of course welcome to reuse code from other
-targets in p4lang.  To test your implementation, you will create a Mininet
-network and send messages between hosts. We provide a skeleton program:
-[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4),
-you need to implement the parser and the ingress control flow.
+targets in p4lang.  To test your implementation, a Mininet network need to be 
+established to allow messages being sent between hosts, which is already implemented 
+and provided for you in topo.py. 
+
+Your job is to implement the parser and the ingress control flow in the provided 
+skeleton program:
+[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4).
+
 
 ### Description of the EasyRoute protocol
 
