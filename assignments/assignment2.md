@@ -75,7 +75,7 @@ probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, plea
 carefully and follow through the instructions in here 
 [http://mininet.org/download/](http://mininet.org/download/).
 
-[//]: <> (## Before starting the exercises)
+[//]: # (## Before starting the exercises)
 
 //Update the values of the shell variables `BMV2_PATH` and
 //`P4C_BM_PATH` in the `env.sh` file. Note that if you cloned both repositories in the same directory as
