@@ -85,7 +85,7 @@ carefully and follow through the instructions in here
 
 ## Exercise 1: Source Routing
 
-[//]: # (Place yourself in the `source_routing` directory.)
+Place yourself in the `assignment2_src` directory [here](https://github.com/xinjin/course-adv-net/tree/master/assignments/assignment2_src).
 
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
