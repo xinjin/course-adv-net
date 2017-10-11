@@ -86,6 +86,11 @@ carefully and follow through the instructions in [here](http://mininet.org/downl
 
 Place yourself in the `assignment2_src` directory [here](https://github.com/xinjin/course-adv-net/tree/master/assignments/assignment2_src).
 
+**NOTE**: Please do 
+`git clone https://github.com/xinjin/course-adv-net.git`
+to get a copy of the whole course repository then work in the assignment directory noted above, 
+or the script would probably fail to source some files when you try running it.
+
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
 from scratch, although you are of course welcome to reuse code from other
