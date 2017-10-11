@@ -91,7 +91,7 @@ P4. We will call this protocol EasyRoute. You will be designing the P4 program
 from scratch, although you are of course welcome to reuse code from other
 targets in p4lang.  To test your implementation, you will create a Mininet
 network and send messages between hosts. We provide a skeleton program:
-[course-adv-net/assignments/assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4),
+[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4),
 you need to implement the parser and the ingress control flow.
 
 ### Description of the EasyRoute protocol
