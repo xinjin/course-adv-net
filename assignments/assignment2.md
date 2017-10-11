@@ -69,7 +69,7 @@ like this:
 - `sudo apt-get install mininet`
 - `sudo pip install scapy thrift networkx`
 
-`NOTE FOR MAC USERS`: OS X currently doesn't support native Mininet installation. You 
+**NOTE FOR MAC USERS**: OS X currently doesn't support native Mininet installation. You 
 would need to do this assignment in a virtual ubuntu environment. The easiest way would 
 probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, please read 
 carefully and follow through the instructions in here 
@@ -227,7 +227,7 @@ The type field indicates the type of the query, which can be 0 (get request), 1 
 
 For a `get` query, the type field should be 0 and the key field contains the key for the queried item. The value field is not meaningful. The switch should update the type field to 2, and update the value field based on the value stored in the switch. Then the switch sends the packet back to the sender as the reply.
 
-For a `put` query, the type field should be 1, the key field should contain the key for the queried item, and the value field should contain the new value of the item. The switch should update its key-value store with the new value, update the option field to 3, and then send the packet back to the sender as the reply.
+For a `put` query, the type field should be 1, the key field should contain the key for the queried item, and the value field should contain the new value of the item. The switch should update its key-value store with the new value, update the type field to 3, and then send the packet back to the sender as the reply.
 
 To make it simple, you do not need to implement sohpisicated routing in this assignment. You can assume that the client is directly connect to the switch, and the switch simply sends the packet to the ingress port to reply to the client.
 
