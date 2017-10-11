@@ -75,17 +75,17 @@ probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, plea
 carefully and follow through the instructions in here 
 [http://mininet.org/download/](http://mininet.org/download/).
 
-## Before starting the exercises
+//## Before starting the exercises
 
-Update the values of the shell variables `BMV2_PATH` and
-`P4C_BM_PATH` in the `env.sh` file. Note that if you cloned both repositories in the same directory as
-this one, you will not need to change the value of the variables.
+//Update the values of the shell variables `BMV2_PATH` and
+//`P4C_BM_PATH` in the `env.sh` file. Note that if you cloned both repositories in the same directory as
+//this one, you will not need to change the value of the variables.
 
-That's all :)
+//That's all :)
 
 ## Exercise 1: Source Routing
 
-Place yourself in the `source_routing` directory.
+//Place yourself in the `source_routing` directory.
 
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
