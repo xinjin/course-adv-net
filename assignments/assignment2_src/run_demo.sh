@@ -16,7 +16,7 @@
 
 THIS_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-source $THIS_DIR/../../env.sh
+source $THIS_DIR/../env.sh
 
 P4C_BM_SCRIPT=$P4C_BM_PATH/p4c_bm/__main__.py
 
