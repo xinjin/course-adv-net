@@ -103,6 +103,7 @@ Your job is
 skeleton program:
 [../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4).
 2. fill the `commands.txt` file with necessary commands.
+
 (You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh` 
 to let it succesfully find the directory it wants in your local environment.)
 
