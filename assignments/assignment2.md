@@ -93,8 +93,7 @@ or the script `run_demo.sh` would probably fail to source some files when you tr
 
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
-from scratch, although you are of course welcome to reuse code from other
-targets in p4lang.  To test your implementation, a Mininet network needs to be 
+from scratch. To test your implementation, a Mininet network needs to be 
 established to allow messages being sent between hosts, which is already implemented 
 and provided for you by topo.py. 
 
