@@ -94,15 +94,15 @@ or the script `run_demo.sh` would probably fail to source some files when you tr
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
 from scratch, although you are of course welcome to reuse code from other
-targets in p4lang.  To test your implementation, a Mininet network need to be 
+targets in p4lang.  To test your implementation, a Mininet network needs to be 
 established to allow messages being sent between hosts, which is already implemented 
-and provided for you in topo.py. 
+and provided for you by topo.py. 
 
 Your job is 
-1. implement the parser and the ingress control flow in the provided 
+1. implementing the parser and the ingress control flow in the provided 
 skeleton program:
-[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4).
-2. fill the `commands.txt` file with necessary commands.
+[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4);
+2. filling the `commands.txt` file with necessary commands.
 
 (You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh` 
 to let it successfully find the directory it wants in your local environment.)
