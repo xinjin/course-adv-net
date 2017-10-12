@@ -105,7 +105,7 @@ skeleton program:
 2. fill the `commands.txt` file with necessary commands.
 
 (You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh` 
-to let it succesfully find the directory it wants in your local environment.)
+to let it successfully find the directory it wants in your local environment.)
 
 
 ### Description of the EasyRoute protocol
