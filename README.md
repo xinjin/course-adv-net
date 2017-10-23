@@ -48,7 +48,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Thu 10/19 | Wide Area Networks | [B4](papers/SIGCOMM13_B4.pdf), [Owan](papers/SIGCOMM16_Owan.pdf) | [SWAN](papers/SIGCOMM13_SWAN.pdf) |
 | Tue 10/24 | Traffic Engineering | [BwE](papers/SIGCOMM15_BwE.pdf), [FFC](papers/SIGCOMM14_FFC.pdf) | [Footprint](papers/NSDI16_Footprint.pdf); Project Proposal due Mon 10/23 |
 | | **Network Verification** | | |
-| Thu 10/26 | No class, but work on assignment 2 | | Assignment 2 due Mon 10/30 |
+| Thu 10/26 | No class, but work on assignment 2 | | Assignment 2 due Mon 11/06 |
 | Tue 10/31 | Data Plane Verification | [HSA](papers/NSDI12_HSA.pdf), [Delta-net](papers/NSDI17_DeltaNet.pdf) | [NetPlumber](papers/NSDI13_NetPlumber.pdf), [VeriFlow](papers/NSDI13_VeriFlow.pdf), [Mutable](papers/NSDI17_Mutable.pdf) |
 | Thu 11/02 | Control Plane Verification | [BatFish](papers/NSDI15_Batfish.pdf ), [Minesweeper](papers/SIGCOMM17_Minesweeper.pdf) | [Propane](papers/SIGCOMM16_Propane.pdf) |
 | | **Network Measurement** | | |
@@ -94,7 +94,7 @@ How to write reviews
 ## Programming Assignments
 
 - [Assignment 1](assignments/assignment1.md): Use iperf3 and wireshark to explore TCP.
-- [Assignment 2](assignments/assignment2.md): TBD.
+- [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features.
 
 ## Course Project
 - Final project: Novel research with a system-building component
