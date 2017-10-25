@@ -226,7 +226,7 @@ A key-value store is a storage service. Each item in the key-value store has a k
 
 ### What you need to do
 
-You will implement a key-value store in the switch with P4. The key-value packets look like this:
+You will implement a key-value store in the switch with P4. The key-value packets may look like this:
 ```
 preamble (8 bytes) | num_valid (4 bytes) | port (1 byte) | type (1 byte) 
 | key (4 bytes) | value (4 bytes)
