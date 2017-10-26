@@ -29,7 +29,7 @@ if you modified it.)
 
 You will get full points if your code could be run successfully and generate required performance. If your code cannot 
 be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to 
-assign partial credit.
+assign partial credit (meaning that you will not get more than half of the credit).
 
 
 ## Introduction
@@ -270,5 +270,5 @@ message.
 
 1. You could just implement kv.py with a modified version of send.py.
 2. You could open a second terminal on h1 and run an adjusted recieve.py to receive and display reply messages.
-
+3. You can assume the key and value are both integers, and use key as the array index to access register.
 
