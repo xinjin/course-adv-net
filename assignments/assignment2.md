@@ -24,7 +24,8 @@ Submit your source code for the two exercises, in two separate folders `exercise
 specific instructions needed to run your code. We will run your code exactly in the `assignment2_src` directory of this 
 course repository (as described in the **NOTE** in the exercise 1 part below) with only the files you provided adding to 
 the right place or replacing the original files there, so please make sure to submit **all** and **only** the code files 
-you generated or modified and make sure they work well in the right place.
+you generated or modified and make sure they work well in the right place. (You do not need to submit `env.sh` file even 
+if you modified it.)
 
 You will get full points if your code could be run successfully and generate required performance. If your code cannot 
 be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to 
