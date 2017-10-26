@@ -83,7 +83,9 @@ like this:
 **NOTE FOR MAC USERS**: OS X currently doesn't support native Mininet installation. You 
 would need to do this assignment in a virtual ubuntu environment. The easiest way would 
 probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, please read 
-carefully and follow through the instructions in [here](http://mininet.org/download/).
+carefully and follow through the instructions in [here](http://mininet.org/download/). 
+For later running `xterm` to open terminal on hosts, you probably need to install 
+[XQuartz](https://www.xquartz.org).
 
 [//]: # (## Before starting the exercises)
 
