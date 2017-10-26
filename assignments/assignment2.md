@@ -266,7 +266,7 @@ You can use part of the code in EasyRoute and implement the key-value store func
 3. You should receive reply messages from switch 1 on host 1 and display the type, key and value fields in each reply 
 message.
 
-### hints
+### Hints
 
 1. You could just implement kv.py with a modified version of send.py.
 2. You could open a second terminal on h1 and run an adjusted recieve.py to receive and display reply messages.
