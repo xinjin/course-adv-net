@@ -26,17 +26,14 @@ class KeyValue(Packet):
     name = "KeyValue"
     fields_desc = [
         LongField("preamble", 0),
-        ByteField("type", 0),
+        IntField("num_valid", 0),
+        ByteField("port", 0),
+        ByteField("mtype", 0),
         IntField("key", 0),
         IntField("value", 0),
     ]
 
 def main():
-    if len(sys.argv) != 3:
-        print "Usage: kv.py [type] [parameters]"
-        print "For example: kv.py get 0"
-        print "             kv.py put 1 10"
-        sys.exit(1)
 
     # TODO: implement get and put
 

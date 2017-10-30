@@ -19,7 +19,18 @@ In this assignment, you will use P4 and Mininet to design network features.
 
 ## Deliverables
 
-Submit your source code for the two exercises.
+Submit your source code for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one 
+`assignment2.zip` file. Please provide a `README.txt` file for each exercise in their corresponding folder descibing any 
+specific instructions needed to run your code. We will run your code exactly in the `assignment2_src` directory of this 
+course repository (as described in the **NOTE** in the exercise 1 part below) with only the files you provided adding to 
+the right place or replacing the original files there, so please make sure to submit **all** and **only** the code files 
+you generated or modified and make sure they work well in the right place. (You do not need to submit `env.sh` file even 
+if you modified it.)
+
+You will get full points if your code could be run successfully and generate required performance. If your code cannot 
+be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to 
+assign partial credit (meaning that you will not get more than half of the credit).
+
 
 ## Introduction
 
@@ -72,7 +83,9 @@ like this:
 **NOTE FOR MAC USERS**: OS X currently doesn't support native Mininet installation. You 
 would need to do this assignment in a virtual ubuntu environment. The easiest way would 
 probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, please read 
-carefully and follow through the instructions in [here](http://mininet.org/download/).
+carefully and follow through the instructions in [here](http://mininet.org/download/). 
+For later running `xterm` to open terminal on hosts, you probably need to install 
+[XQuartz](https://www.xquartz.org).
 
 [//]: # (## Before starting the exercises)
 
@@ -226,9 +239,10 @@ A key-value store is a storage service. Each item in the key-value store has a k
 
 ### What you need to do
 
-You will implement a key-value store in the switch with P4. The key-value packets look like this:
+You will implement a key-value store in the switch with P4. The key-value packets may look like this:
 ```
-preamble (8 bytes) | type (1 byte) | key (4 bytes) | value (4 bytes)
+preamble (8 bytes) | num_valid (4 bytes) | port (1 byte) | type (1 byte) 
+| key (4 bytes) | value (4 bytes)
 ```
 
 The preamble is always set to 1. You can use this to distinguish the key-value
@@ -245,4 +259,16 @@ To make it simple, you do not need to implement sohpisicated routing in this ass
 
 You can use part of the code in EasyRoute and implement the key-value store functionality. Set the size of the key-value store in the switch to be 1000. You need to modify the kv.py in order to implement a simple client that can issue get and put queries to the switch.
 
+### Performance requirement
+
+1. Do not modify the topology used in exercise 1. Run the key-value store process on host 1 and switch 1.
+2. Open a terminal on host 1 with `xterm h1` and run `./kv.py`, you should be able to issue the `get` and `put` query with commands `put [key] [value]` and `get [key]`, for example `put 1 11` and `get 1`.
+3. You should receive reply messages from switch 1 on host 1 and display the type, key and value fields in each reply 
+message.
+
+### Hints
+
+1. You could just implement kv.py with a modified version of send.py.
+2. You could open a second terminal on h1 and run an adjusted recieve.py to receive and display reply messages.
+3. You can assume the key and value are both integers, and use key as the array index to access register.
 
