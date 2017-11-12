@@ -22,7 +22,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 ## Announcements
 
 - Monday, September 4: Sign up for paper presentations [here](https://docs.google.com/spreadsheets/d/1DwZDxOBwvyADt4WEDsYZKJS4s6wEcVM4_Pf29147_SE/edit?usp=sharing) before September 7
-
+- Sunday, November 12: Sign up for project presentations [here](https://docs.google.com/spreadsheets/d/1aF4tvGAQG-kfr9d0e_3B6sguVCQWYGk0guh87ERnx5g/edit?usp=sharing) before November 16
 
 ## Course Syllabus
 
@@ -62,9 +62,9 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | | **Networking Meets Big Data** | | |
 | Tue 11/28 | Distributed Storage | [IOFlow](papers/SOSP13_IOFlow.pdf), [NetCache](http://p4.org/wp-content/uploads/2017/06/p4-ws-2017-netcache.pdf) | [SwitchKV](papers/NSDI16_SwitchKV.pdf )  |
 | Thu 11/30 | Wide Area Analytics | [JetStream](papers/NSDI14_JetStream.pdf), [Clarinet](papers/OSDI16_Clarinet.pdf) | [Iridium](papers/SIGCOMM15_Iridium.pdf) |
-| Tue 12/5 | Performance Modeling | [CherryPick](papers/NSDI17_CherryPick.pdf), [PARIS](papers/SOCC17_PARIS.pdf) | [Ernest](papers/NSDI16_Ernest.pdf) |
 | | **Project Presentations** | | |
-| Thu 12/7 | Talks by project groups | | Project Report due Mon 12/11 |
+| Tue 12/5 | Project presentations 1 | | |
+| Thu 12/7 | Project presentations 2 | | Project Report due Mon 12/11 |
 
 ## Paper Reviews and Presentations
 
