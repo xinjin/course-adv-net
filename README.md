@@ -60,7 +60,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 11/21 | Thanksgiving Vacation | | Gobble, gobble! |
 | Thu 11/23 | Thanksgiving Vacation | | Gobble, gobble! |
 | | **Networking Meets Big Data** | | |
-| Tue 11/28 | Distributed Storage | [IOFlow](papers/SOSP13_IOFlow.pdf), [NetCache](http://p4.org/wp-content/uploads/2017/06/p4-ws-2017-netcache.pdf) | [SwitchKV](papers/NSDI16_SwitchKV.pdf )  |
+| Tue 11/28 | Distributed Storage | [IOFlow](papers/SOSP13_IOFlow.pdf), [NetCache](papers/SOSP17_NetCache.pdf) | [SwitchKV](papers/NSDI16_SwitchKV.pdf )  |
 | Thu 11/30 | Wide Area Analytics | [JetStream](papers/NSDI14_JetStream.pdf), [Clarinet](papers/OSDI16_Clarinet.pdf) | [Iridium](papers/SIGCOMM15_Iridium.pdf) |
 | | **Project Presentations** | | |
 | Tue 12/5 | Project presentations 1 | | |
