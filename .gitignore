@@ -2,3 +2,7 @@
 *.bak
 *.sublime-project
 *.sublime-workspace
+*.ppt
+*.pptx
+*.xlsx
+slides/*slides*
