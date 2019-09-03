@@ -3,13 +3,13 @@
 ## Logistics
 
 - Instructor: [Xin Jin](http://www.cs.jhu.edu/~xinjin/)
-- Teaching assistants: [Kaiyue (Karin) Wu](http://www.cnds.jhu.edu/~wooloo/)
+- Teaching assistants: TBD
 - Lecture time: Tuesday and Thursday, 1:30-2:45pm
-- Location: Malone 228
+- Location: Hodson 316
 - Office hours: Tuesday 2:45-4pm, Malone 207/233
 - Credits: 3 credits
 - Area for MSE and PhD requirements: Systems
-- Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code MZRZK4
+- Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code TBD
 
 ## Course Description
 
@@ -17,59 +17,56 @@ This is a graduate-level course on computer networks. It provides a comprehensiv
 
 ## Prerequisites
 
-One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Network Fundamentals or the equivalent), or permission of the instructor. The course assignments and projects assume students to be comfortable with programming.
+One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Networks or the equivalent), or permission of the instructor. The course assignments and projects assume students to be comfortable with programming.
 
 ## Announcements
 
-- Monday, September 4: Sign up for paper presentations [here](https://docs.google.com/spreadsheets/d/1DwZDxOBwvyADt4WEDsYZKJS4s6wEcVM4_Pf29147_SE/edit?usp=sharing) before September 7
-- Sunday, November 12: Sign up for project presentations [here](https://docs.google.com/spreadsheets/d/1aF4tvGAQG-kfr9d0e_3B6sguVCQWYGk0guh87ERnx5g/edit?usp=sharing) before November 16
+- Tuesday, September 3: First day of class.
 
 ## Course Syllabus
 
 | Date    | Topics  | Readings | Notes   |
 | :------ | :------ | :------  | :------ |
 | | **Classics** | | |
-| Tue 09/05 | Course Overview | [How to Read](papers/CCR07_HowToRead.pdf), [You and Your Research](papers/Bell86_YouAndYourResearch.pdf) | |
-| Thu 09/07 | End Host | [Packet Switching](papers/TOC74_CerfKahn.pdf), [E2E Argument](papers/TOCS84_EndToEnd.pdf) | |
-| Tue 09/12 | Control Plane | [Design Philosophy](papers/SIGCOMM88_DesignPhilosophy.pdf), [E2E Routing Behavior](papers/TON97_E2ERouting.pdf) | |
-| Thu 09/14 | Data Plane | [Click](papers/TOCS00_Click.pdf), [P4](papers/CCR14_P4.pdf) | [50Gbps Router](papers/TON98_50GbpsRouter.pdf), [RMT](papers/SIGCOMM13_RMT.pdf); Class moved to Malone 107 |
-| Tue 09/19 | No class, but work on assignment 1 and forming groups | | Assignment 1 due Mon 09/25 |
-| Thu 09/21 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [Tapestry](papers/JSAC04_Tapestry.pdf) |
+| Tue 09/03 | Course Overview | [How to Read](papers/CCR07_HowToRead.pdf), [You and Your Research](papers/Bell86_YouAndYourResearch.pdf) | |
+| Thu 09/05 | End Host | [Packet Switching](papers/TOC74_CerfKahn.pdf), [E2E Argument](papers/TOCS84_EndToEnd.pdf) | |
+| Tue 09/10 | Control Plane | [Design Philosophy](papers/SIGCOMM88_DesignPhilosophy.pdf), [E2E Routing Behavior](papers/TON97_E2ERouting.pdf) | |
+| Thu 09/12 | Data Plane | [Click](papers/TOCS00_Click.pdf), [P4](papers/CCR14_P4.pdf) | [50Gbps Router](papers/TON98_50GbpsRouter.pdf), [RMT](papers/SIGCOMM13_RMT.pdf) |
+| Tue 09/17 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [Tapestry](papers/JSAC04_Tapestry.pdf) |
+| Thu 09/19 | Golden Age of Programmable Hardware | | |
 | | **Datacenter Networking** | | |
-| Tue 09/26 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
-| Thu 09/28 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
-| Tue 10/03 | Resource Allocation | [DRF](papers/NSDI11_DRF.pdf), [Carbyne](papers/OSDI16_Carbyne.pdf) | [Varys](papers/SIGCOMM14_Varys.pdf) |
-| Thu 10/05 | Congestion Control | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
-| | **RDMA** | | |
-| Tue 10/10 | RDMA 1 | [DCQCN](papers/SIGCOMM15_DCQCN.pdf), [RoCEv2](papers/SIGCOMM16_RoCEv2.pdf) | |
-| Thu 10/12 | RDMA 2 | [Design Guidelines](papers/ATC16_RDMA.pdf), [Infiniswap](papers/NSDI17_Infiniswap.pdf) |  |
+| Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
+| Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
+| Tue 10/01 | Congestion Control 1 | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
+| Thu 10/03 | No Class | |
+| Tue 10/08 | Congestion Control 2 | NDP, HPCC | |
+| Thu 10/10 | Resource Disaggregation | InfiniSwap, LegoOS |  |
 | | **Software-Defined Networking** | | |
-| Tue 10/17 | SDN Control Plane | [Ethane](papers/SIGCOMM07_Ethane.pdf), [Onix](papers/OSDI10_Onix.pdf) | [FlowVisor](papers/OSDI10_FlowVisor.pdf) |
-| Thu 10/19 | Wide Area Networks | [B4](papers/SIGCOMM13_B4.pdf), [Owan](papers/SIGCOMM16_Owan.pdf) | [SWAN](papers/SIGCOMM13_SWAN.pdf) |
-| Tue 10/24 | Traffic Engineering | [BwE](papers/SIGCOMM15_BwE.pdf), [FFC](papers/SIGCOMM14_FFC.pdf) | [Footprint](papers/NSDI16_Footprint.pdf); Project Proposal due Mon 10/23 |
-| | **Network Verification** | | |
-| Thu 10/26 | No class, but work on assignment 2 | | Assignment 2 due Mon 11/06 |
-| Tue 10/31 | Data Plane Verification | [HSA](papers/NSDI12_HSA.pdf), [Delta-net](papers/NSDI17_DeltaNet.pdf) | [NetPlumber](papers/NSDI13_NetPlumber.pdf), [VeriFlow](papers/NSDI13_VeriFlow.pdf), [Mutable](papers/NSDI17_Mutable.pdf) |
-| Thu 11/02 | Control Plane Verification | [BatFish](papers/NSDI15_Batfish.pdf ), [Minesweeper](papers/SIGCOMM17_Minesweeper.pdf) | [Propane](papers/SIGCOMM16_Propane.pdf) |
-| | **Network Measurement** | | |
-| Tue 11/07 | Network Telemetry | [EverFlow](papers/SIGCOMM15_EverFlow.pdf), [Pingmesh](papers/SIGCOMM15_Pingmesh.pdf) | [NetSight](papers/NSDI14_NetSight.pdf) |
-| Thu 11/09 | Sketch | [UnivMon](papers/SIGCOMM16_UnivMon.pdf), [SketchVisor](papers/SIGCOMM17_SketchVisor.pdf) | [OpenSketch](papers/NSDI13_OpenSketch.pdf) |
+| Tue 10/15 | Control Plane | [Ethane](papers/SIGCOMM07_Ethane.pdf), [Onix](papers/OSDI10_Onix.pdf) | [FlowVisor](papers/OSDI10_FlowVisor.pdf) |
+| Thu 10/17 | No Class | | |
+| Tue 10/22 | Wide Area Networks | [B4](papers/SIGCOMM13_B4.pdf), [Owan](papers/SIGCOMM16_Owan.pdf) | [SWAN](papers/SIGCOMM13_SWAN.pdf) |
+| | **Programmable Networks** | | |
+| Thu 10/24 | Caching | SwitchKV, NetCache ||
+| Tue 10/29 | Consensus | NOPaxos, Eris ||
+| Thu 10/31 | Coordination and Measurement | NetChain, Sonata ||
+| | **Networking Meets AI** | | |
+| Tue 11/05 | AI for networking 1 | NeuroCuts, Pensieve |  |
+| Thu 11/07 | AI for networking 2 | Aurora, Decima |  |
+| Tue 11/12 | Networking for AI 1 | TBD | |
+| Thu 11/14 | Networking for AI 2 | TBD | |
 | | **Middleboxes** | | |
-| Tue 11/14 | Frameworks | [E2](papers/SOSP15_E2.pdf), [NetBricks](papers/OSDI16_NetBricks.pdf) | [SIMPLE](papers/SIGCOMM13_SIMPLE.pdf) |
-| Thu 11/16 | Load Balancers | [Ananta](papers/SIGCOMM13_Ananta.pdf), [SilkRoad](papers/SIGCOMM17_SilkRoad.pdf) | [Duet](papers/SIGCOMM14_Duet.pdf) |
-| Tue 11/21 | Thanksgiving Vacation | | Gobble, gobble! |
-| Thu 11/23 | Thanksgiving Vacation | | Gobble, gobble! |
-| | **Networking Meets Big Data** | | |
-| Tue 11/28 | Distributed Storage | [IOFlow](papers/SOSP13_IOFlow.pdf), [NetCache](papers/SOSP17_NetCache.pdf) | [SwitchKV](papers/NSDI16_SwitchKV.pdf )  |
-| Thu 11/30 | Wide Area Analytics | [JetStream](papers/NSDI14_JetStream.pdf), [Clarinet](papers/OSDI16_Clarinet.pdf) | [Iridium](papers/SIGCOMM15_Iridium.pdf) |
+| Tue 11/19 | Frameworks | [E2](papers/SOSP15_E2.pdf), [NetBricks](papers/OSDI16_NetBricks.pdf) | [SIMPLE](papers/SIGCOMM13_SIMPLE.pdf) |
+| Thu 11/21 | Load Balancers | [Ananta](papers/SIGCOMM13_Ananta.pdf), [SilkRoad](papers/SIGCOMM17_SilkRoad.pdf) | [Duet](papers/SIGCOMM14_Duet.pdf) |
+| Tue 11/26 | Thanksgiving Vacation | | Gobble, gobble! |
+| Thu 11/28 | Thanksgiving Vacation | | Gobble, gobble! |
 | | **Project Presentations** | | |
-| Tue 12/5 | Project presentations 1 | | |
-| Thu 12/7 | Project presentations 2 | | Project Report due Mon 12/11 |
+| Tue 12/03 | Project presentations 1 | | |
+| Thu 12/05 | Project presentations 2 | | Project Report due Mon 12/11 |
 
 ## Paper Reviews and Presentations
 
 - Each student reviews 1 paper/class; submit reviews before the class
-- Each student presents 2 papers; sign up here
+- Each student presents 2 papers
 
 How to write reviews
 
@@ -97,17 +94,17 @@ How to write reviews
 - [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Turorial 2](https://github.com/p4lang/tutorials/blob/master/SIGCOMM_2016/p4-tutorial-slides.pdf))
 
 ## Course Project
-- Final project: Novel research with a system-building component
-  - Open-ended research problem: Come up with your own, or talk to me
-  - Can work alone or in small teams, i.e., 1-5 people
+- Final project
+  - Topic: reproduce a paper discussed in class, or novel research with a system-building component
+  - Can work alone, or in groups of two students
   - Must involve writing some software
 - Can overlap with other projects, with permission
   - Undergraduate research projects
   - PhD qualifying research projects
 - Deliverables
-  - Two-page short proposal: Oct 23
-  - Project presentation: Dec 7 (last class)
-  - Six-page final report: Dec 11
+  - Two-page short proposal: TBD
+  - Project presentation: Dec 5 (last class)
+  - Six-page final report: Dec 9
 
 ## Policies
 
