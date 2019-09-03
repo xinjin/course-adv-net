@@ -3,13 +3,13 @@
 ## Logistics
 
 - Instructor: [Xin Jin](http://www.cs.jhu.edu/~xinjin/)
-- Teaching assistants: TBD
+- Teaching assistants: Hang Zhu
 - Lecture time: Tuesday and Thursday, 1:30-2:45pm
 - Location: Hodson 316
 - Office hours: Tuesday 2:45-3:45pm, Malone 233
 - Credits: 3 credits
 - Area for MSE and PhD requirements: Systems
-- Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code TBD
+- Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code 9J4JNJ
 
 ## Course Description
 
