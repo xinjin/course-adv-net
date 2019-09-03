@@ -6,7 +6,7 @@
 - Teaching assistants: TBD
 - Lecture time: Tuesday and Thursday, 1:30-2:45pm
 - Location: Hodson 316
-- Office hours: Tuesday 2:45-4pm, Malone 207/233
+- Office hours: Tuesday 2:45-3:45pm, Malone 233
 - Credits: 3 credits
 - Area for MSE and PhD requirements: Systems
 - Homework submission: [Gradescope](https://www.gradescope.com/), join the course with entry code TBD
@@ -102,7 +102,7 @@ How to write reviews
   - Undergraduate research projects
   - PhD qualifying research projects
 - Deliverables
-  - Two-page short proposal: TBD
+  - Two-page short proposal: Oct 20
   - Project presentation: Dec 5 (last class)
   - Six-page final report: Dec 9
 
