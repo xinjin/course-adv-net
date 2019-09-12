@@ -34,7 +34,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 09/10 | Control Plane | [Design Philosophy](papers/SIGCOMM88_DesignPhilosophy.pdf), [E2E Routing Behavior](papers/TON97_E2ERouting.pdf) | |
 | Thu 09/12 | Data Plane | [Click](papers/TOCS00_Click.pdf), [P4](papers/CCR14_P4.pdf) | [50Gbps Router](papers/TON98_50GbpsRouter.pdf), [RMT](papers/SIGCOMM13_RMT.pdf) |
 | Tue 09/17 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [ToR](papers/Security04_ToR.pdf) |
-| Thu 09/19 | Golden Age of Programmable Hardware | [GoldenAge](papers/CACM19_GoldenAge.pdf), [Microseconds](papers/CACM17_Microseconds.pdf) | |
+| Thu 09/19 | The Big Picture | [GoldenAge](papers/CACM19_GoldenAge.pdf), [Microseconds](papers/CACM17_Microseconds.pdf) | [TuringAward'17 Lecture](https://www.youtube.com/watch?v=3LVeEjsn8Ts) |
 | | **Datacenter Networking** | | |
 | Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
 | Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
