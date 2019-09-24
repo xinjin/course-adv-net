@@ -36,8 +36,8 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 09/17 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [ToR](papers/Security04_ToR.pdf) |
 | Thu 09/19 | The Big Picture | [GoldenAge](papers/CACM19_GoldenAge.pdf), [Microseconds](papers/CACM17_Microseconds.pdf) | [TuringAward'17 Lecture](https://www.youtube.com/watch?v=3LVeEjsn8Ts) |
 | | **Datacenter Networking** | | |
-| Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
-| Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf); Assingment 1 out on Monday, September 30 |
+| Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf); Assingment 1 is out |
+| Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf)|
 | Tue 10/01 | Congestion Control 1 | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
 | Thu 10/03 | Assignment 1 | | Assignment 1 due on Monday, October 7 |
 | Tue 10/08 | Congestion Control 2 | [NDP](papers/SIGCOMM17_NDP.pdf), [HPCC](papers/SIGCOMM19_HPCC.pdf) | |
