@@ -11,7 +11,6 @@ apt-get update
 KERNEL=$(uname -r)
 DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 apt-get install -y --no-install-recommends \
-  atom \
   autoconf \
   automake \
   bison \
@@ -20,7 +19,6 @@ apt-get install -y --no-install-recommends \
   cmake \
   cpp \
   curl \
-  emacs24 \
   flex \
   git \
   libboost-dev \
@@ -58,7 +56,6 @@ apt-get install -y --no-install-recommends \
   python-psutil \
   python-scapy \
   python-setuptools \
-  sublime-text-installer \
   tcpdump \
   unzip \
   vim \

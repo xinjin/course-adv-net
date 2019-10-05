@@ -42,7 +42,9 @@ p4lang](https://github.com/p4lang/p4factory/tree/master/targets/simple_router/p4
 custom source routing protocol. *Key-Value Store* asks you to write a P4 program to implement a key-value store in the switch. We use P4_14 in this assignment.
 
 ## Set Up Virtual Machine
-The first part of this assignment is to set up the virtual machine (VM) you will use for the rest of the course. This will make it easy to install all dependencies for the programming assignments, saving you the tedium of installing individual packages and ensuring your development environment is correct. This will take about **1 hour** or even longer.
+The first part of this assignment is to set up the virtual machine (VM) you will use for the rest of the course. This will make it easy to install all dependencies for the programming assignments, saving you the tedium of installing individual packages and ensuring your development environment is correct.
+
+**Note:** [step 6](#step-6)This will take about **1 hour** or even longer.
 
 ### Step 1: Install Vagrant
 Vagrant is a tool for automatically configuring a VM using instructions given in a single "Vagrantfile."
@@ -107,7 +109,7 @@ You must be in some subdirectory of the directory containing the Vagrantfile to 
 
 ### Step 7: Test SSH to VPN
 
-Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@mininet:~$`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
+Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@vagrant:~$`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
 
 Vagrant is especially useful because of this shared directory structure.  You don't need to copy files to and from the VM. Any file or directory in the `course-adv-net/assignments/assignment2` directory where the `Vagrantfile` is located is automatically shared between your computer and the virtual machine. This means you can use your IDE of choice from outside the VM to write your code (but will still have to build and run within the VM).
 
@@ -115,7 +117,7 @@ The command `logout` will stop the SSH connection at any point.
 
 ### Extra Note for Windows users
 
-Line endings are symbolized differently in DOS (Windows) and Unix (Linux/MacOS). In the former, they are represented by a carriage return and line feed (CRLF, or "\r\n"), and in the latter, just a line feed (LF, or "\n"). Given that you ran `git pull` from Windows, git detects your operating system and adds carriage returns to files when downloading. This can lead to parsing problems within the VM, which runs Ubuntu (Unix). Fortunately, this only seems to affect the shell scripts (\*.sh files) we wrote for testing. The `Vagrantfile` is set to automically convert all files back to Unix format, so **you shouldn't have to worry about this**. **However**, if you want to write/edit shell scripts to help yourself with testing, or if you encounter this problem with some other type of file, use the preinstalled program `dos2unix`. Run `dos2unix [file]` to convert it to Unix format (before editing/running in VM), and run `unix2dos [file]` to convert it to DOS format (before editing on Windows). A good hint that you need to do this when running from the VM is some error message involving `^M` (carriage return). A good hint you need to do this when editing on Windows is the lack of new lines. Remember, doing this should only be necessary if you want to edit shell scripts.
+Line endings are symbolized differently in DOS (Windows) and Unix (Linux/MacOS). In the former, they are represented by a carriage return and line feed (CRLF, or "\r\n"), and in the latter, just a line feed (LF, or "\n"). Given that you ran `git pull` from Windows, git detects your operating system and adds carriage returns to files when downloading. This can lead to parsing problems within the VM, which runs Ubuntu (Unix). Fortunately, this only seems to affect the shell scripts (\*.sh files) we wrote for testing. The `Vagrantfile` is set to automatically convert all files back to Unix format, so **you shouldn't have to worry about this**. **However**, if you want to write/edit shell scripts to help yourself with testing, or if you encounter this problem with some other type of file, use the preinstalled program `dos2unix`. Run `dos2unix [file]` to convert it to Unix format (before editing/running in VM), and run `unix2dos [file]` to convert it to DOS format (before editing on Windows). A good hint that you need to do this when running from the VM is some error message involving `^M` (carriage return). A good hint you need to do this when editing on Windows is the lack of new lines. Remember, doing this should only be necessary if you want to edit shell scripts.
 
 ### Step 8: Go take a break. You've earned it!
 
@@ -134,9 +136,6 @@ Your job is
 skeleton program:
 [source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4);
 2. filling the `commands.txt` file with necessary commands.
-
-(You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh`
-to let it successfully find the directory it wants in your local environment.)
 
 
 ### Description of the EasyRoute protocol
@@ -226,7 +225,7 @@ is used to add an entry to a table
 
 ### Testing your code
 
-./run_demo.sh will compile your code and create the Mininet network described
+`./run_sr.sh` will compile your code and create the Mininet network described
 above. It will also use commands.txt to configure each one of the switches.
 Once the network is up and running, you should type the following in the Mininet
 CLI:
@@ -244,6 +243,8 @@ You should then be able to type messages on h1 and receive them on h3. The
 `send.py` program finds the shortest path between h1 and h3 using Dijkstra, then
 send correctly-formatted packets to h3 through s1 and s3.
 
+**Note** `chmod +x <file_name>` will make your scripts executable.
+
 ### Debugging your code
 
 .pcap files will be generated for every interface (9 files: 3 for each of the 3
@@ -254,7 +255,7 @@ being processed correctly.
 
 ### What is key-value store
 
-A key-value store is a storage service. Each item in the key-value store has a key, which is the name of the item, and a value, which is the actual content of the item. A key-value store provides two basic funcions: `get(key)` and `put(key, value)`. The function `get(key)` gets the value of the corresponding key from the key-value store. The function `put(key, value)` updates the value of the corresoponding in the key-value store.
+A key-value store is a storage service. Each item in the key-value store has a key, which is the name of the item, and a value, which is the actual content of the item. A key-value store provides two basic functions: `get(key)` and `put(key, value)`. The function `get(key)` gets the value of the corresponding key from the key-value store. The function `put(key, value)` updates the value of the corresponding in the key-value store.
 
 ### What you need to do
 
@@ -274,19 +275,24 @@ For a `get` query, the type field should be 0 and the key field contains the key
 
 For a `put` query, the type field should be 1, the key field should contain the key for the queried item, and the value field should contain the new value of the item. The switch should update its key-value store with the new value, update the type field to 3, and then send the packet back to the sender as the reply.
 
-To make it simple, you do not need to implement sohpisicated routing in this assignment. You can assume that the client is directly connect to the switch, and the switch simply sends the packet to the ingress port to reply to the client.
+To make it simple, you do not need to implement sophisticated routing in this assignment. You can assume that the client is directly connect to the switch, and the switch simply sends the packet to the ingress port to reply to the client.
 
 You can use part of the code in EasyRoute and implement the key-value store functionality. Set the size of the key-value store in the switch to be 1000. You need to modify the kv.py in order to implement a simple client that can issue get and put queries to the switch.
+
+Your job is
+1. implementing a p4 program that realizes key-value store.
+2. (optional) filling the `commands.txt` file with necessary commands.
+2. writing a python script `kv.py` that sends key-value requests, displays the requests on the screen, receives reply and displays reply messages on the screen.
+
 
 ### Performance requirement
 
 1. Do not modify the topology used in exercise 1. Run the key-value store process on host 1 and switch 1.
-2. Open a terminal on host 1 with `xterm h1` and run `./kv.py`, you should be able to issue the `get` and `put` query with commands `put [key] [value]` and `get [key]`, for example `put 1 11` and `get 1`.
+2. `./run_kv.sh` and then open a terminal on host 1 with `xterm h1` and run `./kv.py`, you should be able to issue the `get` and `put` query with commands `put [key] [value]` and `get [key]`, for example `put 1 11` and `get 1`.
 3. You should receive reply messages from switch 1 on host 1 and display the type, key and value fields in each reply
 message.
 
 ### Hints
 
 1. You could just implement kv.py with a modified version of send.py.
-2. You could open a second terminal on h1 and run an adjusted recieve.py to receive and display reply messages.
-3. You can assume the key and value are both integers, and use key as the array index to access register.
+2. You can assume the key and value are both integers, and use key as the array index to access register.
