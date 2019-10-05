@@ -5,8 +5,7 @@ In this assignment, you will use P4 and Mininet to design network features.
 ## Outline
 
 - [Introduction](#introduction)
-- [Obtaining required software](#obtaining-required-software)
-- [Before starting the exercises](#before-starting-the-exercises)
+- [Set Up Virtual Machine](#set-up-virtual-machine)
 - [Exercise 1: Source Routing](#exercise-1-source-routing)
   - [Description of the EasyRoute protocol](#description-of-the-easyroute-protocol)
   - [A few hints](#a-few-hints)
@@ -20,12 +19,11 @@ In this assignment, you will use P4 and Mininet to design network features.
 ## Deliverables
 
 Submit your source code for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one
-`assignment2.zip` file. Please provide a `README.txt` file for each exercise in their corresponding folder descibing any
+`assignment2.zip` file. Please provide a `README.txt` file for each exercise in their corresponding folder describing any
 specific instructions needed to run your code. We will run your code exactly in the `assignment2_src` directory of this
 course repository (as described in the **NOTE** in the exercise 1 part below) with only the files you provided adding to
 the right place or replacing the original files there, so please make sure to submit **all** and **only** the code files
-you generated or modified and make sure they work well in the right place. (You do not need to submit `env.sh` file even
-if you modified it.)
+you generated or modified and make sure they work well in the right place.
 
 You will get full points if your code could be run successfully and generate required performance. If your code cannot
 be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to
@@ -44,7 +42,7 @@ p4lang](https://github.com/p4lang/p4factory/tree/master/targets/simple_router/p4
 custom source routing protocol. *Key-Value Store* asks you to write a P4 program to implement a key-value store in the switch. We use P4_14 in this assignment.
 
 ## Set Up Virtual Machine
-The first part of this assignment is to set up the virtual machine (VM) you will use for the rest of the course. This will make it easy to install all dependencies for the programming assignments, saving you the tedium of installing individual packages and ensuring your development environment is correct.
+The first part of this assignment is to set up the virtual machine (VM) you will use for the rest of the course. This will make it easy to install all dependencies for the programming assignments, saving you the tedium of installing individual packages and ensuring your development environment is correct. This will take about **1 hour** or even longer.
 
 ### Step 1: Install Vagrant
 Vagrant is a tool for automatically configuring a VM using instructions given in a single "Vagrantfile."
@@ -92,10 +90,10 @@ Open your terminal (use the one mentioned in step 3 if using Windows) and `cd` t
 
 Run `git clone https://github.com/xinjin/course-adv-net` to download the course files from GitHub.
 
-`cd course-net-assignment` to enter the course assignment directory.
+`cd course-adv-net/assignments/assignment2` to enter the course assignment directory.
 
 ### Step 6: Provision virtual machine using Vagrant
-From the `course-net-assignment` directory you just entered, run the command  `vagrant up` to start the VM and  provision it according to the Vagrantfile. You will likely have to wait several minutes. You may see warnings/errors in red, such as "default: stdin: is not a tty", but you shouldn't have worry about them.
+From the `course-adv-net/assignments/assignment2` directory you just entered, run the command  `vagrant up` to start the VM and  provision it according to the Vagrantfile. You will likely have to wait several minutes. You may see warnings/errors in red, such as "default: stdin: is not a tty", but you shouldn't have worry about them.
 
 **Note 1**: The following commands will allow you to stop the VM at any point (such as when you are done working on an assignment for the day):
 * `vagrant suspend` will save the state of the VM and stop it.
@@ -111,7 +109,7 @@ You must be in some subdirectory of the directory containing the Vagrantfile to 
 
 Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@mininet:~$`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
 
-Vagrant is especially useful because of this shared directory structure.  You don't need to copy files to and from the VM. Any file or directory in the `course-net-assignment` directory where the `Vagrantfile` is located is automatically shared between your computer and the virtual machine. This means you can use your IDE of choice from outside the VM to write your code (but will still have to build and run within the VM).
+Vagrant is especially useful because of this shared directory structure.  You don't need to copy files to and from the VM. Any file or directory in the `course-adv-net/assignments/assignment2` directory where the `Vagrantfile` is located is automatically shared between your computer and the virtual machine. This means you can use your IDE of choice from outside the VM to write your code (but will still have to build and run within the VM).
 
 The command `logout` will stop the SSH connection at any point.
 
@@ -123,12 +121,7 @@ Line endings are symbolized differently in DOS (Windows) and Unix (Linux/MacOS).
 
 ## Exercise 1: Source Routing
 
-Place yourself in the `assignment2_src` directory [here](https://github.com/xinjin/course-adv-net/tree/master/assignments/assignment2_src).
-
-**NOTE**: Please do
-`git clone https://github.com/xinjin/course-adv-net.git`
-to get a copy of the whole course repository then work in the assignment directory noted above,
-or the script `run_demo.sh` would probably fail to source some files when you try running it.
+Place yourself in the `assignment2_src` directory [here](https://github.com/xinjin/course-adv-net/tree/master/assignments/assignment2/assignment2_src).
 
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
@@ -139,7 +132,7 @@ and provided for you by topo.py.
 Your job is
 1. implementing the parser and the ingress control flow in the provided
 skeleton program:
-[../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4);
+[source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4);
 2. filling the `commands.txt` file with necessary commands.
 
 (You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh`
@@ -170,7 +163,7 @@ We will use the EasyRoute protocol to send text messages. The payload will
 therefore correspond to the text message we are sending. You do not have to
 worry about the encoding of the text message.
 
-![Source Routing topology](figures/source_routing_topology.png)
+![Source Routing topology](../figures/source_routing_topology.png)
 
 If I wish to send message "Hello" from h1 to h3, the EasyRoute packet will look
 like this:
