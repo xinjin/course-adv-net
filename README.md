@@ -36,25 +36,25 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 09/17 | Overlay Networks | [Chord](papers/SIGCOMM01_Chord.pdf), [CAN](papers/SIGCOMM01_CAN.pdf)  | [Pastry](papers/Middleware01_Pastry.pdf), [ToR](papers/Security04_ToR.pdf) |
 | Thu 09/19 | The Big Picture | [GoldenAge](papers/CACM19_GoldenAge.pdf), [Microseconds](papers/CACM17_Microseconds.pdf) | [TuringAward'17 Lecture](https://www.youtube.com/watch?v=3LVeEjsn8Ts) |
 | | **Datacenter Networking** | | |
-| Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf) |
-| Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf) |
+| Tue 09/24 | Datacenter Architectures | [VL2](papers/SIGCOMM09_VL2.pdf), [Jupiter Rising](papers/SIGCOMM15_Jupiter.pdf) | [PortLand](papers/SIGCOMM09_PortLand.pdf); Assingment 1 is out |
+| Thu 09/26 | Optical Datacenters | [Helios](papers/SIGCOMM10_Helios.pdf), [ProjecToR](papers/SIGCOMM16_ProjecToR.pdf) | [FireFly](papers/SIGCOMM14_FireFly.pdf)|
 | Tue 10/01 | Congestion Control 1 | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
-| Thu 10/03 | No Class | |
-| Tue 10/08 | Congestion Control 2 | NDP, HPCC | |
-| Thu 10/10 | Resource Disaggregation | InfiniSwap, LegoOS |  |
+| Thu 10/03 | Assignment 1 | | Assignment 1 due on Monday, October 7 |
+| Tue 10/08 | Congestion Control 2 | [NDP](papers/SIGCOMM17_NDP.pdf), [HPCC](papers/SIGCOMM19_HPCC.pdf) | |
+| Thu 10/10 | Resource Disaggregation | [InfiniSwap](papers/NSDI17_InfiniSwap.pdf), [LegoOS](papers/OSDI18_LegoOS.pdf) |  Assingment 2 out on Monday, October 14 |
 | | **Software-Defined Networking** | | |
 | Tue 10/15 | Control Plane | [Ethane](papers/SIGCOMM07_Ethane.pdf), [Onix](papers/OSDI10_Onix.pdf) | [FlowVisor](papers/OSDI10_FlowVisor.pdf) |
-| Thu 10/17 | No Class | | |
+| Thu 10/17 | Assignment 2 | | Assingment 2 out on Monday, October 21 |
 | Tue 10/22 | Wide Area Networks | [B4](papers/SIGCOMM13_B4.pdf), [Owan](papers/SIGCOMM16_Owan.pdf) | [SWAN](papers/SIGCOMM13_SWAN.pdf) |
 | | **Programmable Networks** | | |
-| Thu 10/24 | Caching | SwitchKV, NetCache ||
-| Tue 10/29 | Consensus | NOPaxos, Eris ||
-| Thu 10/31 | Coordination and Measurement | NetChain, Sonata ||
-| | **Networking Meets AI** | | |
-| Tue 11/05 | AI for networking 1 | NeuroCuts, Pensieve |  |
-| Thu 11/07 | AI for networking 2 | Aurora, Decima |  |
-| Tue 11/12 | Networking for AI 1 | TBD | |
-| Thu 11/14 | Networking for AI 2 | TBD | |
+| Thu 10/24 | Caching | [SwitchKV](papers/NSDI16_SwitchKV.pdf), [NetCache](papers/SOSP17_NetCache.pdf) | Project proposal due on Monday, October 28 |
+| Tue 10/29 | Consensus | [NOPaxos](papers/OSDI16_NOPaxos.pdf), [Eris](papers/SOSP17_Eris.pdf) ||
+| Thu 10/31 | Coordination and Telemetry | [NetChain](papers/NSDI18_NetChain.pdf), [Sonata](papers/SIGCOMM18_Sonata.pdf) ||
+| | **Networked Systems Meets AI** | | |
+| Tue 11/05 | AI for Networked Systems 1 | [NeuroCuts](papers/SIGCOMM19_NeuroCuts.pdf), [Pensieve](papers/SIGCOMM17_Pensieve.pdf) |  |
+| Thu 11/07 | AI for Networked Systems 2 | [Aurora](papers/ICML19_Aurora.pdf), [Decima](papers/SIGCOMM19_Decima.pdf) |  |
+| Tue 11/12 | Networked Systems for AI 1 | [ByteScheduler](papers/SOSP19_ByteScheduler.pdf), [DGC](papers/ICLR18_DGC.pdf) | |
+| Thu 11/14 | Networked Systems for AI 2 | [PipeDream](papers/SOSP19_PipeDream.pdf), Nexus | |
 | | **Middleboxes** | | |
 | Tue 11/19 | Frameworks | [E2](papers/SOSP15_E2.pdf), [NetBricks](papers/OSDI16_NetBricks.pdf) | [SIMPLE](papers/SIGCOMM13_SIMPLE.pdf) |
 | Thu 11/21 | Load Balancers | [Ananta](papers/SIGCOMM13_Ananta.pdf), [SilkRoad](papers/SIGCOMM17_SilkRoad.pdf) | [Duet](papers/SIGCOMM14_Duet.pdf) |
@@ -103,7 +103,7 @@ How to write reviews
   - Undergraduate research projects
   - PhD qualifying research projects
 - Deliverables
-  - Two-page short proposal: Oct 20
+  - Two-page short proposal: Oct 28
   - Project presentation: Dec 5 (last class)
   - Six-page final report: Dec 9
 
