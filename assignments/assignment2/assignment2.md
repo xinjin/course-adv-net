@@ -19,16 +19,16 @@ In this assignment, you will use P4 and Mininet to design network features.
 
 ## Deliverables
 
-Submit your source code for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one 
-`assignment2.zip` file. Please provide a `README.txt` file for each exercise in their corresponding folder descibing any 
-specific instructions needed to run your code. We will run your code exactly in the `assignment2_src` directory of this 
-course repository (as described in the **NOTE** in the exercise 1 part below) with only the files you provided adding to 
-the right place or replacing the original files there, so please make sure to submit **all** and **only** the code files 
-you generated or modified and make sure they work well in the right place. (You do not need to submit `env.sh` file even 
+Submit your source code for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one
+`assignment2.zip` file. Please provide a `README.txt` file for each exercise in their corresponding folder descibing any
+specific instructions needed to run your code. We will run your code exactly in the `assignment2_src` directory of this
+course repository (as described in the **NOTE** in the exercise 1 part below) with only the files you provided adding to
+the right place or replacing the original files there, so please make sure to submit **all** and **only** the code files
+you generated or modified and make sure they work well in the right place. (You do not need to submit `env.sh` file even
 if you modified it.)
 
-You will get full points if your code could be run successfully and generate required performance. If your code cannot 
-be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to 
+You will get full points if your code could be run successfully and generate required performance. If your code cannot
+be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to
 assign partial credit (meaning that you will not get more than half of the credit).
 
 
@@ -43,80 +43,106 @@ p4lang](https://github.com/p4lang/p4factory/tree/master/targets/simple_router/p4
 *Source Routing* asks you to write a P4 program to implement a
 custom source routing protocol. *Key-Value Store* asks you to write a P4 program to implement a key-value store in the switch. We use P4_14 in this assignment.
 
+## Set Up Virtual Machine
+The first part of this assignment is to set up the virtual machine (VM) you will use for the rest of the course. This will make it easy to install all dependencies for the programming assignments, saving you the tedium of installing individual packages and ensuring your development environment is correct.
 
-## Obtaining required software
+### Step 1: Install Vagrant
+Vagrant is a tool for automatically configuring a VM using instructions given in a single "Vagrantfile."
 
-To complete the exercises, you will need to clone 2 p4lang Github repositories
-and install their dependencies. To clonde the repositories:
+**macOS & Windows:** You need to install Vagrant using the correct download link for your computer here: https://www.vagrantup.com/downloads.html.
 
-- `git clone https://github.com/p4lang/behavioral-model.git bmv2`
-- `git clone https://github.com/p4lang/p4c-bm.git p4c-bmv2`
+**Windows only**: You will be asked to restart your computer at the end of the installation. Click Yes to do so right away, or restart manually later,
+but don't forget to do so or Vagrant will not work!
 
-The first repository ([bmv2](https://github.com/p4lang/behavioral-model)) is the
-second version of the behavioral model. It is a C++ software switch that will
-behave according to your P4 program. The second repository
-([p4c-bmv2](https://github.com/p4lang/p4c-bm)) is the compiler for the
-behavioral model: it takes P4 program and output a JSON file which can be loaded
-by the behavioral model.
+**Linux:** First, make sure your package installer is up to date by running the command `sudo apt-get update`. To install Vagrant, you must have the "Universe" repository on your computer; run `sudo apt-add-repository universe` to add it. Finally, run `sudo apt-get install vagrant` to install vagrant.
 
-Each of these repositories come with dependencies. `p4c-bmv2` is a Python
-repository and installing the required Python dependencies is very easy to do
-using `pip`: `sudo pip install -r requirements.txt`.
+### Step 2: Install VirtualBox
+VirtualBox is a VM provider (hypervisor).
 
-`bmv2` is a C++ repository and has more external dependencies. They are listed
-in the
-[README](https://github.com/p4lang/behavioral-model/blob/master/README.md). If
-you are running Ubuntu 14.04+, the dependencies should be easy to install (you
-can use the `install_deps.sh` script that comes with `bmv2`). Do not forget to
-build the code once all the dependencies have been installed:
+**macOS & Windows:** You need to install VirtualBox using the correct download link for your computer here: https://www.virtualbox.org/wiki/Downloads. The links are under the heading "VirtualBox 5.x.x platform packages."
 
-- `./autogen.sh`
-- `./configure`
-- `make`
+**Windows only:** Use all the default installation settings, but you can uncheck the "Start Oracle VirtualBox 5.x.x after installation" checkbox.
 
-You will also need to install `mininet`, as well as the following Python
-packages: `scapy`, `thrift` (>= 0.9.2) and `networkx`. On Ubuntu, it would look
-like this:
-- `sudo apt-get install mininet`
-- `sudo pip install scapy thrift networkx`
+**Linux:** Run the command `sudo apt-get install virtualbox`.
 
-**NOTE FOR MAC USERS**: OS X currently doesn't support native Mininet installation. You 
-would need to do this assignment in a virtual ubuntu environment. The easiest way would 
-probably be through running a pre-packaged Mininet/Ubuntu VM in VirtualBox, please read 
-carefully and follow through the instructions in [here](http://mininet.org/download/). 
-For later running `xterm` to open terminal on hosts, you probably need to install 
-[XQuartz](https://www.xquartz.org).
+**Note:** This will also install the VirtualBox application on your computer, but you should never need to run it, though it may be helpful (see Step 6).
 
-[//]: # (## Before starting the exercises)
+### Step 3: Install Git (and SSH-capable terminal on Windows)
+Git is a distributed version control system.
 
-[//]: # (Update the values of the shell variables `BMV2_PATH` and
-[//]: # (`P4C_BM_PATH` in the `env.sh` file. Note that if you cloned both repositories in the same directory as)
-[//]: # (this one, you will not need to change the value of the variables.)
+**macOS & Windows:** You need to install Git using the correct download link for your computer here: https://git-scm.com/downloads.
 
-[//]: # (That's all :)
+**macOS only:** Once you have opened the .dmg installation file, you will see a Finder window including a .pkg file, which is the installer. Opening this normally may give you a prompt saying it can't be opened because it is from an unidentified developer. To override this protection, instead right-click on thet .pkg file and select "Open". This will show a prompt asking you if you are sure you want to open it. Select "Yes". This will take you to the (straightforward) installation.
+
+**Windows only:** You will be given many options to choose from during the installation; using all the defaults will be sufficient for this course (you can uncheck "View release notes" at the end). The installation includes an SSH-capable Bash terminal usually located at `C:\Program Files\Git\bin\bash.exe`. You should use this as your terminal in this class, unless you prefer another SSH-capable terminal (the command prompt will not work). Feel free to create a shortcut to it; copying and pasting the executable somewhere else will not work, however.
+
+**Linux:** `sudo apt-get install git`.
+
+### Step 4: Install X Server
+You will need an X Server to input commands to the virtual machine.
+
+**macOS:** Install [XQuartz](https://www.xquartz.org/). You will need to log out and log back in to complete the installation (as mentioned by the prompt at the end).
+
+**Windows:** Install [Xming](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download). Use default options and uncheck "Launch Xming" at the end.
+
+**Linux:** The X server is pre-installed!
+
+### Step 5: Clone course Git repository
+Open your terminal (use the one mentioned in step 3 if using Windows) and `cd` to wherever you want to keep files for this course on your computer.  
+
+Run `git clone https://github.com/xinjin/course-adv-net` to download the course files from GitHub.
+
+`cd course-net-assignment` to enter the course assignment directory.
+
+### Step 6: Provision virtual machine using Vagrant
+From the `course-net-assignment` directory you just entered, run the command  `vagrant up` to start the VM and  provision it according to the Vagrantfile. You will likely have to wait several minutes. You may see warnings/errors in red, such as "default: stdin: is not a tty", but you shouldn't have worry about them.
+
+**Note 1**: The following commands will allow you to stop the VM at any point (such as when you are done working on an assignment for the day):
+* `vagrant suspend` will save the state of the VM and stop it.
+* `vagrant halt` will gracefully shutdown the VM operating system and power down the VM.
+* `vagrant destroy` will remove all traces of the VM from your system. If you have important files saved on the VM (like your assignment solutions) **DO NOT** use this command.
+
+Additionally, the command `vagrant status` will allow you to check the status of your machine in case you are unsure (e.g. running, powered off, saved...).
+You must be in some subdirectory of the directory containing the Vagrantfile to use any of the commands above, otherwise Vagrant will not know which VM you are referring to.
+
+**Note 2**: The VirtualBox application that was installed in Step 2 provides a visual interface as an alternative to these commands, where you can see the status of your VM and power it on/off or save its state. It is not recommended to use it, however, since it is not integrated with Vagrant, and typing commands should be no slower. It is also not an alternative to the initial `vagrant up` since this creates the VM.
+
+### Step 7: Test SSH to VPN
+
+Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@mininet:~$`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
+
+Vagrant is especially useful because of this shared directory structure.  You don't need to copy files to and from the VM. Any file or directory in the `course-net-assignment` directory where the `Vagrantfile` is located is automatically shared between your computer and the virtual machine. This means you can use your IDE of choice from outside the VM to write your code (but will still have to build and run within the VM).
+
+The command `logout` will stop the SSH connection at any point.
+
+### Extra Note for Windows users
+
+Line endings are symbolized differently in DOS (Windows) and Unix (Linux/MacOS). In the former, they are represented by a carriage return and line feed (CRLF, or "\r\n"), and in the latter, just a line feed (LF, or "\n"). Given that you ran `git pull` from Windows, git detects your operating system and adds carriage returns to files when downloading. This can lead to parsing problems within the VM, which runs Ubuntu (Unix). Fortunately, this only seems to affect the shell scripts (\*.sh files) we wrote for testing. The `Vagrantfile` is set to automically convert all files back to Unix format, so **you shouldn't have to worry about this**. **However**, if you want to write/edit shell scripts to help yourself with testing, or if you encounter this problem with some other type of file, use the preinstalled program `dos2unix`. Run `dos2unix [file]` to convert it to Unix format (before editing/running in VM), and run `unix2dos [file]` to convert it to DOS format (before editing on Windows). A good hint that you need to do this when running from the VM is some error message involving `^M` (carriage return). A good hint you need to do this when editing on Windows is the lack of new lines. Remember, doing this should only be necessary if you want to edit shell scripts.
+
+### Step 8: Go take a break. You've earned it!
 
 ## Exercise 1: Source Routing
 
 Place yourself in the `assignment2_src` directory [here](https://github.com/xinjin/course-adv-net/tree/master/assignments/assignment2_src).
 
-**NOTE**: Please do 
+**NOTE**: Please do
 `git clone https://github.com/xinjin/course-adv-net.git`
-to get a copy of the whole course repository then work in the assignment directory noted above, 
+to get a copy of the whole course repository then work in the assignment directory noted above,
 or the script `run_demo.sh` would probably fail to source some files when you try running it.
 
 In this problem, we will implement a very simple source routing protocol in
 P4. We will call this protocol EasyRoute. You will be designing the P4 program
-from scratch. To test your implementation, a Mininet network needs to be 
-established to allow messages being sent between hosts, which is already implemented 
-and provided for you by topo.py. 
+from scratch. To test your implementation, a Mininet network needs to be
+established to allow messages being sent between hosts, which is already implemented
+and provided for you by topo.py.
 
-Your job is 
-1. implementing the parser and the ingress control flow in the provided 
+Your job is
+1. implementing the parser and the ingress control flow in the provided
 skeleton program:
 [../assignment2_src/p4src/source_routing.p4](https://github.com/xinjin/course-adv-net/blob/master/assignments/assignment2_src/p4src/source_routing.p4);
 2. filling the `commands.txt` file with necessary commands.
 
-(You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh` 
+(You probably need to modify the sourcing path in script `course-adv-net/assignments/env.sh`
 to let it successfully find the directory it wants in your local environment.)
 
 
@@ -241,7 +267,7 @@ A key-value store is a storage service. Each item in the key-value store has a k
 
 You will implement a key-value store in the switch with P4. The key-value packets may look like this:
 ```
-preamble (8 bytes) | num_valid (4 bytes) | port (1 byte) | type (1 byte) 
+preamble (8 bytes) | num_valid (4 bytes) | port (1 byte) | type (1 byte)
 | key (4 bytes) | value (4 bytes)
 ```
 
@@ -263,7 +289,7 @@ You can use part of the code in EasyRoute and implement the key-value store func
 
 1. Do not modify the topology used in exercise 1. Run the key-value store process on host 1 and switch 1.
 2. Open a terminal on host 1 with `xterm h1` and run `./kv.py`, you should be able to issue the `get` and `put` query with commands `put [key] [value]` and `get [key]`, for example `put 1 11` and `get 1`.
-3. You should receive reply messages from switch 1 on host 1 and display the type, key and value fields in each reply 
+3. You should receive reply messages from switch 1 on host 1 and display the type, key and value fields in each reply
 message.
 
 ### Hints
@@ -271,4 +297,3 @@ message.
 1. You could just implement kv.py with a modified version of send.py.
 2. You could open a second terminal on h1 and run an adjusted recieve.py to receive and display reply messages.
 3. You can assume the key and value are both integers, and use key as the array index to access register.
-
