@@ -91,8 +91,8 @@ How to write reviews
 
 ## Programming Assignments
 
-- [Assignment 1](assignments/assignment1.md): Use iperf3 and wireshark to explore TCP.
-- [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Turorial 2](https://github.com/p4lang/tutorials/blob/master/SIGCOMM_2016/p4-tutorial-slides.pdf))
+- [Assignment 1](assignments/assignment1/assignment1.md): Use iperf3 and wireshark to explore TCP.
+- [Assignment 2](assignments/assignment2/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Turorial 2](https://github.com/p4lang/tutorials/blob/master/SIGCOMM_2016/p4-tutorial-slides.pdf))
 
 ## Course Project
 - Final project
@@ -124,4 +124,3 @@ This course strictly enforces the university and department policies on academic
 - Paper reviews: 20%
 - Programming assignments: 20%
 - Project report and presentation: 40%
-
