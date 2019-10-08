@@ -1,0 +1,13 @@
+{
+    "hosts": {
+        "h1": {"ip": "10.0.1.1/24", "mac": "08:00:00:00:01:11",
+               "commands":["route add default gw 10.0.1.10 dev eth0",
+                           "arp -i eth0 -s 10.0.1.10 08:00:00:00:01:00"]}
+    },
+    "switches": {
+        "s1": { "runtime_json" : "s1-runtime.json" }
+    },
+    "links": [
+        ["h1", "s1-p1"]
+    ]
+}
