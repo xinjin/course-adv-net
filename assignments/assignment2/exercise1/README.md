@@ -34,7 +34,7 @@ bring up a network in Mininet to test its behavior.
    * start a Mininet instance with three switches (`s1`, `s2`, `s3`) configured
      in a triangle, each connected to one host (`h1`, `h2`, `h3`).
      Check the network topology using the `net` command in mininet.
-     You can also change the topology in topology.json ([Source Routing Topo](../figures/source_routing_topology.png))
+     You can also change the topology in topology.json ([Source Routing Topo](../../figures/source_routing_topology.png))
    * The hosts are assigned IPs of `10.0.1.1`, `10.0.2.2`, etc
      (`10.0.<Switchid>.<hostID>`).
 
@@ -61,8 +61,7 @@ bring up a network in Mininet to test its behavior.
    the Mininet command line.
 
 The message was not received because each switch is programmed with
-`source_routing.p4`, which drops all packets on arrival.  You can
-verify this by looking at `/tmp/p4s.s1.log`.  Your job is to extend
+`source_routing.p4`, which drops all packets on arrival. Your job is to extend
 the P4 code so packets are delivered to their destination.
 
 ## Step 2: Implement source routing

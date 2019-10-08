@@ -13,18 +13,15 @@ preamble (8 bytes) | type (1 byte) | key (4 bytes) | value (4 bytes)
 ```
 
 The preamble is always set to 1. You can use this to distinguish the key-value
-packets from other packets your switch may receive. We do not
-guarantee that your P4 switch will exclusively receive EasyRoute packets.
+packets from other packets your switch may receive.
 
 The type field indicates the type of the query, which can be 0 (get request), 1 (put request), 2 (get reply), and 3 (put reply). The key and value field contains the key and value of a item, respectively.
 
-For a `get` query, the type field should be 0 and the key field contains the key for the queried item. The value field is not meaningful. The switch should update the type field to 2, and update the value field based on the value stored in the switch. Then the switch sends the packet back to the sender as the reply.
+For a `get` query, the type field should be 0 and the key field contain the key for the queried item. The value field is not meaningful. The switch should update the type field to 2, and update the value field based on the value stored in the switch. Then the switch sends the packet back to the sender as the reply.
 
 For a `put` query, the type field should be 1, the key field should contain the key for the queried item, and the value field should contain the new value of the item. The switch should update its key-value store with the new value, update the type field to 3, and then send the packet back to the sender as the reply.
 
-To make it simple, you can assume that the client is directly connect to the switch, and the switch simply sends the packet to the ingress port to reply to the client.
-
-You can use part of the code in exercise1 and implement the key-value store functionality. Set the size of the key-value store in the switch to be 1000. Run kv.py in order to implement a simple client that can issue get and put queries to the switch.
+You can use part of the code in exercise1 and implement the key-value store functionality. Set the size of the key-value store in the switch to be 1000.
 
 ## Step 1: Implementing kv_store
 
@@ -32,6 +29,7 @@ You can use part of the code in exercise1 and implement the key-value store func
     **Note** primitives you may use:
     - write into a register: `<register_name>.write(<index>, <value>)`
     - read value from a register: `<register_name>.read(<value>, <index>)`
+    - swap the egress_spec and ingress_port: `standard_metadata.egress_spec = standard_metadata.ingress_port`
 2. In your shell, run:
    ```bash
    make

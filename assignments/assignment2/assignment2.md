@@ -6,7 +6,8 @@ In this assignment, you will use P4 and Mininet to design network features.
 
 - [Introduction](#introduction)
 - [Set Up Virtual Machine](#set-up-virtual-machine)
-
+- [Source Routing](#exercise-1)
+- [Key-value Store](#exercise-2)
 ## Deliverables
 
 Submit your p4 code for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one
@@ -96,7 +97,7 @@ You must be in some subdirectory of the directory containing the Vagrantfile to 
 
 ### Step 7: Test SSH to VPN
 
-Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@vagrant:~$`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
+Run `vagrant ssh` from your terminal. This is the command you will use every time you want to access the VM. If it works, your terminal prompt will change to `vagrant@vagrant:/vagrant/`. All further commands will execute on the VM. You can then run `cd /vagrant` to get to the course directory that's shared between your regular OS and the VM.
 
 Vagrant is especially useful because of this shared directory structure.  You don't need to copy files to and from the VM. Any file or directory in the `course-adv-net/assignments/assignment2` directory where the `Vagrantfile` is located is automatically shared between your computer and the virtual machine. This means you can use your IDE of choice from outside the VM to write your code (but will still have to build and run within the VM).
 
@@ -108,8 +109,8 @@ Line endings are symbolized differently in DOS (Windows) and Unix (Linux/MacOS).
 
 ### Step 8: Go take a break. You've earned it!
 
-## Exercise 1: Source Routing
-* [Source Routing](exercise1)
+## Exercise 1
+[Source Routing](exercise1)
 
-## Exercise 2: Key-value Store
-* [Key-value Store](exercise2)
+## Exercise 2
+[Key-value Store](exercise2)
