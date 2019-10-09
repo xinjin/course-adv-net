@@ -91,8 +91,10 @@ How to write reviews
 
 ## Programming Assignments
 
+
 - [Assignment 1](assignments/assignment1.md): Use iperf3 and wireshark to explore TCP.
 - [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Tutorial 2](https://github.com/xinjin/course-net/blob/master/slides/lec16_programmable.pdf))
+
 
 ## Course Project
 - Final project
@@ -124,4 +126,3 @@ This course strictly enforces the university and department policies on academic
 - Paper reviews: 20%
 - Programming assignments: 20%
 - Project report and presentation: 40%
-

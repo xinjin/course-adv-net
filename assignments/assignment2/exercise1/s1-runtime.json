@@ -1,0 +1,6 @@
+{
+  "target": "bmv2",
+  "p4info": "build/source_routing.p4.p4info.txt",
+  "bmv2_json": "build/source_routing.json",
+  "table_entries": [ ]
+}

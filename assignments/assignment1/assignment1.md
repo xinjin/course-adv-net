@@ -137,7 +137,7 @@ Start a live capture in Wireshark. Then, run a curl/wget to grab a webpage. Afte
 
 Look at the packets you've captured. Example screenshot below.
 
-![image](figures/curl_google.png "curl google")
+![image](../figures/curl_google.png "curl google")
 
 **Questions**
 
@@ -151,7 +151,7 @@ Now, we will open a webpage with embeded objects (e.g., cnn.com which has a lot 
 
 Example screenshot below. **You should use your own screenshot.**
 
-![image](figures/cnn.png "cnn")
+![image](../figures/cnn.png "cnn")
 
 **Questions**
 
@@ -159,4 +159,3 @@ Example screenshot below. **You should use your own screenshot.**
 2. Do you see any parallel connections your browser makes? If so, how many can you see in your screenshot?
 
 > Tip: you can always use filter in Wireshark to just display the packets you want to see.
-

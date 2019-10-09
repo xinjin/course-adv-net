@@ -1,0 +1,6 @@
+{
+  "target": "bmv2",
+  "p4info": "build/kv_store.p4.p4info.txt",
+  "bmv2_json": "build/kv_store.json",
+  "table_entries": [ ]
+}
