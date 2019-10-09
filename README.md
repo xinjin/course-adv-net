@@ -41,16 +41,16 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 10/01 | Congestion Control 1 | [DCTCP](papers/SIGCOMM10_DCTCP.pdf), [pFabric](papers/SIGCOMM13_pFabric.pdf) | [PDQ](papers/SIGCOMM12_PDQ.pdf) |
 | Thu 10/03 | Assignment 1 | | Assignment 1 due on Monday, October 7 |
 | Tue 10/08 | Congestion Control 2 | [NDP](papers/SIGCOMM17_NDP.pdf), [HPCC](papers/SIGCOMM19_HPCC.pdf) | |
-| Thu 10/10 | Resource Disaggregation | [InfiniSwap](papers/NSDI17_InfiniSwap.pdf), [LegoOS](papers/OSDI18_LegoOS.pdf) |  Assingment 2 out on Monday, October 14 |
+| Thu 10/10 | Resource Disaggregation | [InfiniSwap](papers/NSDI17_InfiniSwap.pdf), [LegoOS](papers/OSDI18_LegoOS.pdf) |  Assingment 2 is out |
 | | **Software-Defined Networking** | | |
 | Tue 10/15 | Control Plane | [Ethane](papers/SIGCOMM07_Ethane.pdf), [Onix](papers/OSDI10_Onix.pdf) | [FlowVisor](papers/OSDI10_FlowVisor.pdf) |
-| Thu 10/17 | Assignment 2 | | Assingment 2 out on Monday, October 21 |
+| Thu 10/17 | Assignment 2 | | Assingment 2 due on Monday, October 21 |
 | Tue 10/22 | Wide Area Networks | [B4](papers/SIGCOMM13_B4.pdf), [Owan](papers/SIGCOMM16_Owan.pdf) | [SWAN](papers/SIGCOMM13_SWAN.pdf) |
 | | **Programmable Networks** | | |
 | Thu 10/24 | Caching | [SwitchKV](papers/NSDI16_SwitchKV.pdf), [NetCache](papers/SOSP17_NetCache.pdf) | Project proposal due on Monday, October 28 |
 | Tue 10/29 | Consensus | [NOPaxos](papers/OSDI16_NOPaxos.pdf), [Eris](papers/SOSP17_Eris.pdf) ||
 | Thu 10/31 | Coordination and Telemetry | [NetChain](papers/NSDI18_NetChain.pdf), [Sonata](papers/SIGCOMM18_Sonata.pdf) ||
-| | **Networked Systems Meets AI** | | |
+| | **Networked Systems Meet AI** | | |
 | Tue 11/05 | AI for Networked Systems 1 | [NeuroCuts](papers/SIGCOMM19_NeuroCuts.pdf), [Pensieve](papers/SIGCOMM17_Pensieve.pdf) |  |
 | Thu 11/07 | AI for Networked Systems 2 | [Aurora](papers/ICML19_Aurora.pdf), [Decima](papers/SIGCOMM19_Decima.pdf) |  |
 | Tue 11/12 | Networked Systems for AI 1 | [ByteScheduler](papers/SOSP19_ByteScheduler.pdf), [DGC](papers/ICLR18_DGC.pdf) | |
@@ -92,7 +92,7 @@ How to write reviews
 ## Programming Assignments
 
 - [Assignment 1](assignments/assignment1.md): Use iperf3 and wireshark to explore TCP.
-- [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Turorial 2](https://github.com/p4lang/tutorials/blob/master/SIGCOMM_2016/p4-tutorial-slides.pdf))
+- [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Tutorial 2](https://github.com/xinjin/course-net/blob/master/slides/lec16_programmable.pdf))
 
 ## Course Project
 - Final project
