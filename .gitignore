@@ -6,4 +6,6 @@
 *.pptx
 *.xlsx
 .*
+*.pyc
+sol*
 slides/*slides*
