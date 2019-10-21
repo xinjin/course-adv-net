@@ -13,8 +13,8 @@ In this assignment, you will use P4 and Mininet to design network features.
 Submit your **p4 code** for the two exercises, in two separate folders `exercise1` and `exercise2`, and together in one
 `assignment2.zip` file.
 
-You will get full points if your code could be run successfully. If your code cannot
-be run or doesn't have the right performance, we will first deduct half of the total points then look at your code to
+You will get full points if your code could be run successfully and realize the right functionalities. If your code cannot
+be run or doesn't have the right functionalities, we will first deduct half of the total points then look at your code to
 assign partial credit (meaning that you will not get more than half of the credit).
 
 
