@@ -23,10 +23,13 @@ For a `put` query, the type field should be 1, the key field should contain the 
 
 You can use part of the code in exercise1 and implement the key-value store functionality. Set the size of the key-value store in the switch to be 1000.
 
+For simplicity, you can assume the key and value are both integers, and use key as the array index to access register.
+
 ## Step 1: Implementing kv_store
 
 1. Implementing the p4 program `kv_store.p4` from scratch under the path with this README.
-    **Note** primitives you may use:
+
+    **Note:** primitives you may use:
     - write into a register: `<register_name>.write(<index>, <value>)`
     - read value from a register: `<register_name>.read(<value>, <index>)`
     - swap the egress_spec and ingress_port: `standard_metadata.egress_spec = standard_metadata.ingress_port`

@@ -91,10 +91,8 @@ How to write reviews
 
 ## Programming Assignments
 
-
-- [Assignment 1](assignments/assignment1.md): Use iperf3 and wireshark to explore TCP.
-- [Assignment 2](assignments/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Tutorial 2](https://github.com/xinjin/course-net/blob/master/slides/lec16_programmable.pdf))
-
+- [Assignment 1](assignments/assignment1/assignment1.md): Use iperf3 and wireshark to explore TCP.
+- [Assignment 2](assignments/assignment2/assignment2.md): Use P4 and Mininet to design network features. ([Tutorial 1](slides/P4_tutorial.pdf), [Tutorial 2 (p4 cheat sheet)](https://drive.google.com/file/d/1Z8woKyElFAOP6bMd8tRa_Q4SA1cd_Uva/view))
 
 ## Course Project
 - Final project
