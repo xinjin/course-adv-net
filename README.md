@@ -54,7 +54,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Tue 11/05 | AI for Networked Systems 1 | [NeuroCuts](papers/SIGCOMM19_NeuroCuts.pdf), [Pensieve](papers/SIGCOMM17_Pensieve.pdf) |  |
 | Thu 11/07 | AI for Networked Systems 2 | [Aurora](papers/ICML19_Aurora.pdf), [Decima](papers/SIGCOMM19_Decima.pdf) |  |
 | Tue 11/12 | Networked Systems for AI 1 | [ByteScheduler](papers/SOSP19_ByteScheduler.pdf), [DGC](papers/ICLR18_DGC.pdf) | |
-| Thu 11/14 | Networked Systems for AI 2 | [PipeDream](papers/SOSP19_PipeDream.pdf), Nexus | |
+| Thu 11/14 | Networked Systems for AI 2 | [PipeDream](papers/SOSP19_PipeDream.pdf), [Nexus](papers/SOSP19_Nexus.pdf) | |
 | | **Middleboxes** | | |
 | Tue 11/19 | Frameworks | [E2](papers/SOSP15_E2.pdf), [NetBricks](papers/OSDI16_NetBricks.pdf) | [SIMPLE](papers/SIGCOMM13_SIMPLE.pdf) |
 | Thu 11/21 | Load Balancers | [Ananta](papers/SIGCOMM13_Ananta.pdf), [SilkRoad](papers/SIGCOMM17_SilkRoad.pdf) | [Duet](papers/SIGCOMM14_Duet.pdf) |
