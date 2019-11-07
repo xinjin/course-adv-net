@@ -53,7 +53,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | | **Networked Systems Meet AI** | | |
 | Tue 11/05 | AI for Networked Systems 1 | [NeuroCuts](papers/SIGCOMM19_NeuroCuts.pdf), [Pensieve](papers/SIGCOMM17_Pensieve.pdf) |  |
 | Thu 11/07 | AI for Networked Systems 2 | [Aurora](papers/ICML19_Aurora.pdf), [Decima](papers/SIGCOMM19_Decima.pdf) |  |
-| Tue 11/12 | Networked Systems for AI 1 | [ByteScheduler](papers/SOSP19_ByteScheduler.pdf), [DGC](papers/ICLR18_DGC.pdf) | |
+| Tue 11/12 | Networked Systems for AI 1 | [ByteScheduler](papers/SOSP19_ByteScheduler.pdf), [DGC](papers/ICLR18_DGC.pdf) | Relocated to Bloomberg 276 |
 | Thu 11/14 | Networked Systems for AI 2 | [PipeDream](papers/SOSP19_PipeDream.pdf), [Nexus](papers/SOSP19_Nexus.pdf) | |
 | | **Middleboxes** | | |
 | Tue 11/19 | Frameworks | [E2](papers/SOSP15_E2.pdf), [NetBricks](papers/OSDI16_NetBricks.pdf) | [SIMPLE](papers/SIGCOMM13_SIMPLE.pdf) |
@@ -62,7 +62,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Thu 11/28 | Thanksgiving Vacation | | Gobble, gobble! |
 | | **Project Presentations** | | |
 | Tue 12/03 | Project presentations 1 | | |
-| Thu 12/05 | Project presentations 2 | | Project Report due Mon 12/11 |
+| Thu 12/05 | Project presentations 2 | | Test demo with TA before Fri 12/06; Project Report due Mon 12/09 |
 
 ## Paper Reviews and Presentations
 
@@ -104,7 +104,7 @@ How to write reviews
   - PhD qualifying research projects
 - Deliverables
   - Two-page short proposal: Oct 28
-  - Project presentation: Dec 5 (last class)
+  - Project presentation: Dec 3 and Dec 5
   - Six-page final report: Dec 9
 
 ## Policies
