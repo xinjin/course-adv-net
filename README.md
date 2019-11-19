@@ -21,6 +21,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 
 ## Announcements
 
+- Tuesday, November 19: Sign up for project presentations [here](https://docs.google.com/spreadsheets/d/1UUT69h7W5EqzjCecCH68ubv9eu29a6h0EKkMJLpjVKs/edit?usp=sharing).
 - Thursday, September 12: Sign up for paper presentations [here](https://docs.google.com/spreadsheets/d/1UUT69h7W5EqzjCecCH68ubv9eu29a6h0EKkMJLpjVKs/edit?usp=sharing).
 - Tuesday, September 3: First day of class.
 
