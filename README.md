@@ -63,7 +63,7 @@ One undergraduate course in computer networks (e.g., EN.601.414/614 Computer Net
 | Thu 11/28 | Thanksgiving Vacation | | Gobble, gobble! |
 | | **Project Presentations** | | |
 | Tue 12/03 | Project presentations 1 | | |
-| Thu 12/05 | Project presentations 2 | | Test demo with TA before Fri 12/06; Project Report due Mon 12/09 |
+| Thu 12/05 | Project presentations 2 | | Relocated to Gilman 10; Test demo with TA before Fri 12/06; Project Report due Mon 12/09 |
 
 ## Paper Reviews and Presentations
 
